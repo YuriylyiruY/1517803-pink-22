@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script defer type="module" src="js/main.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body class="body">
@@ -48,28 +48,96 @@
             <input class="main-form__father-name" id="father-name" name="Отчество" type="text" required
               placeholder="Ну и отчество тоже">
           </fieldset>
+          <div class="main-form__wrap-checkbox">
+            <p class="main-form__text-checkbox">Ваши безбашенные достижения в путешествии</p>
           <fieldset class="main-form__fieldset">
-            <label class="main-form__label" for="selfie"></label> <input class="main-form__input" type="checkbox"
-              name="selfy" id="selfie" checked>
-            Сделал селфи с акулой<span class="main-form__span"></span>
+            <label class="main-form__label" for="selfie">Сделал селфи с акулой</label> <input class="main-form__input"
+              type="checkbox" name="selfy" id="selfie" checked>
+            <span class="main-form__span"></span>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <label class="main-form__label" for="born"></label> <input class="main-form__input" type="checkbox"
-              name="born" id="born" checked>
-            Обгорел на пляже<span class="main-form__span"></span>
+            <label class="main-form__label" for="born">Обгорел на пляже</label> <input class="main-form__input"
+              type="checkbox" name="born" id="born" checked>
+            <span class="main-form__span"></span>
           </fieldset>
           <fieldset class="main-form__fieldset">
-            <label class="main-form__label" for="Chack-Noris"></label> <input class="main-form__input" type="checkbox"
-              name="Chack-Noris" id="Chack-Noris">
-              Видел Чака Норриса<span class="main-form__span"></span>
-
+            <label class="main-form__label" for="Chack-Noris">Видел Чака Норриса</label> <input class="main-form__input"
+              type="checkbox" name="Chack-Noris" id="Chack-Noris">
+            <span class="main-form__span"></span>
           </fieldset>
-
-
-
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Souvenirs"> Накупил сувениров</label> <input class="main-form__input"
+              type="checkbox" name="Souvenirs" id="Souvenirs">
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Jack-screw">Удержал башню</label> <input class="main-form__input"
+              type="checkbox" name="Jack-screw" id="Jack-screw" checked>
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Hulk">Разгромил отель</label> <input class="main-form__input"
+              type="checkbox" name="Hulk" id="Hulk">
+            <span class="main-form__span"></span>
+          </fieldset>
+        </div>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="tel">Номер телефона</label>
+            <input class="main-form__input" type="tel" name="tel" id="tel"
+              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="email">Адрес почты</label>
+            <input class="main-form__input" type="email" name="email" id="email" required placeholder="Введите почту*">
+          </fieldset>
+          <div class="main-form__wrap-radio">
+            <p class="main-form__text">С каким приложением путешествовали?</p>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="ios">Pink для iOS</label>
+              <input class="main-form__input" type="radio" value="Pink для iOS" id="ios" name="Apps" checked> <span
+                class="main-form__span"></span>
+            </fieldset>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="android">Pink на Android</label>
+              <input class="main-form__input" type="radio" value="Pink на Android" id="android" name="Apps"> <span
+                class="main-form__span"></span>
+            </fieldset>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="windows-phone">Windows Phone</label>
+              <input class="main-form__input" type="radio" value="Windows Phone" id="windows-phone" name="Apps"> <span
+                class="main-form__span"></span>
+            </fieldset>
+          </div>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="comment-field">Опишите свои эммоции</label>
+            <textarea class="main-form__content-text" name="comment" id="comment-field" rows="9"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <input class="main-form__submit" type="submit" value="Отправить форму" id="submit">
+          <label class="main-form__label" for="submit">* — обязательные поля</label>
         </form>
       </section>
     </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item footer-logo">
+          <h2 class="visually-hidden">Логотип-ссылка организации</h2>
+          Здесь будет логотип</li>
+        <li class="footer__item footer-networks">
+          <h2 class="visually-hidden">Контакты в социальных сетях</h2>
+          <ul class="footer-networks__list networks">
+            <li class="networks-item">Twitter</li>
+            <li class="networks-item">Facebook</li>
+            <li class="networks-item">You tube</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h2 class="visually-hidden">Авторы проекта</h2>
+          <p class="footer__label">Разработано<a class="footer-link"
+            href="https://htmlacademy.ru/intensive/adaptive">логотип HTML ACADEMY</a></p>
+        </li>
+      </ul>
+    </footer>
   </div>
 </body>
 
