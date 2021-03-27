@@ -4,9 +4,139 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script defer type="module" src="js/main.js"></script>
 </head>
 
-<body>
+<body class="body">
+  <div class="body__wrap">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li class="list__item logo"><a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">здесь будет
+              логотип</a>
+            <button class="logo__button">button</button></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">главная</a></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">фотографии</a></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">конкурс</a></li>
+          <li class="list__item item"><a class="item__link-index" href="https://htmlacademy.ru/intensive/adaptive">html
+              academy</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <main class="main">
+      <section class="main__promo promo">
+        <h1 class="visually-hidden"> Реклама приложения</h1>
+        <img class="promo__img" src="img/promo-picture.png" alt="показано как приложение преобразует фотографию">
+        <button class="promo__button-download">Скачать</button>
+        <ul class="promo__apps-list app-item">
+          <li class="app-item__apple"></li>
+          <li class="app-item__android"></li>
+          <li class="app-item__microsoft"></li>
+        </ul>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="main__capacity-app capacity">
+        <h1 class="visually-hidden"> Чем интересно приложение</h1>
+        <p class="capacity__lead">Устали от серости мегаполиса?</p>
+        <p class="capacity__lead">Нам есть, что вам предложить!</p>
+        <ul class="capacity__list">
+          <li class="capacity__item">
+            <h2 class="capacity__header">Поднимает настроение</h2>
+            <p class="capacity__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              кликов!</p>
+          </li>
+          <li class="capacity__item">
+            <h2 class="capacity__header">Меняет мир вокруг</h2>
+            <p class="capacity__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект</p>
+          </li>
+          <li class="capacity__item">
+            <h2 class="capacity__header">Заводит новых друзей</h2>
+            <p class="capacity__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="capacity__greeting" src="img/capacity-greeting.png" alt="приветствие от приложения">
+      </section>
+      <section class="main__slider slider-comment">
+        <h1 class="visually-hidden"> Делимся впечалениями о приложении</h1>
+        <ul class="slider-comment__list">
+          <li class="slider-comment__item">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</li>
+        </ul>
+        <div class="slider-comment__controls">
+          <button class="slider-comment__button" type="button">Первый слайд</button>
+          <button class="slider-comment__button" type="button">Второй слайд</button>
+          <button class="slider-comment__button" type="button">Третий слайд</button>
+        </div>
+      </section>
+      <section class="main__price-app-slider set">
+        <h1 class="visually-hidden"> Цена в зависимости от комплектации приложения</h1>
+        <ul class="set__list">
+          <li class="set__header">
+            <p class="set__text">Cтандарт</p>
+            <p class="set__price">3,99 USD</p>
+          </li>
+          <li class="set__item">Розовый фильтр</li>
+          <li class="set__item">Смайлики</li>
+          <li class="set__item">Комментарии</li>
+        </ul>
+        <div class="set__controls">
+          <button class="set__button" type="button">Первый слайд</button>
+          <button class="set__button" type="button">Второй слайд</button>
+          <button class="set__button" type="button">Третий слайд</button>
+        </div>
+      </section>
+      <section class="main__contacts contacts">
+        <h1 class="visually-hidden"> Контакты организации предоставляющее услуги</h1>
+        <ul class="contacts__list">
+          <li class="contacts-lead">
+            <p class="contacts-tagline">Остались вопросы?
+              Свяжитесь с нами!</p>
+          </li>
+          <li class="contacts-item">
+            <h2 class="contacts-header">Звоните:</h2>
+            <p class="contacts-text">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts-item">
+            <h2 class="contacts-header">Пишите:</h2>
+            <p class="contacts-text">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts-item">
+            <h2 class="contacts-header">Приезжайте в гости:</h2>
+            <p class="contacts-text">ул. Большая
+              Конюшенная, 19/8</p>
+          </li>
+          <li class="contacts-item">
+            <div class="contacts-map"></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item footer-logo">
+          <h2 class="visually-hidden">Логотип-ссылка</h2>
+          Здесь будет логотип</li>
+        <li class="footer__item footer-networks">
+          <h2 class="visually-hidden">Контакты в социальных сетях</h2>
+          <ul class="footer-networks__list networks">
+            <li class="networks-item">Twitter</li>
+            <li class="networks-item">Facebook</li>
+            <li class="networks-item">You tube</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h2 class="visually-hidden">Авторы проекта</h2>
+          <p class="footer__label">Разработано<a class="footer-link"
+            href="https://htmlacademy.ru/intensive/adaptive" alt="HTML Academy">логотип HTML ACADEMY</a></p>
+        </li>
+      </ul>
+    </footer>
+  </div>
 
 
 
