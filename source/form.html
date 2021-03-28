@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" class="page-wrapper">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li class="list__item logo"><a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">здесь будет
+              логотип</a>
+            <button class="logo__button">button</button></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">главная</a></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">фотографии</a></li>
+          <li class="list__item item"><a class="item__link-index" href="#!">конкурс</a></li>
+          <li class="list__item item"><a class="item__link-index" href="https://htmlacademy.ru/intensive/adaptive">html
+              academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-form">
+      <section class="main-introduction introduction">
+        <h1 class="introduction-header"> Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="introduction__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+      </section>
+      <section class="main-form__user-form">
+        <h2 class="visually-hidden">Загрузка данных участника конкурса</h2>
+        <form class="main-form__item-form" action="https://echo.htmlacademy.ru" autocomplete="off">
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__content-second-name" for="second-name">Фамилия:</label>
+            <input class="main-form__second-name" id="second-name" name="Фамилия" type="text" required
+              placeholder="Укажите фамилию*">
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__content-name" for="first-name">Имя:</label>
+            <input class="main-form__first-name" id="first-name" name="Имя" type="text" required
+              placeholder="Введите ваше имя*">
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__content-father-name" for="father-name">Отчество:</label>
+            <input class="main-form__father-name" id="father-name" name="Отчество" type="text" required
+              placeholder="Ну и отчество тоже">
+          </fieldset>
+          <div class="main-form__wrap-checkbox">
+            <p class="main-form__text-checkbox">Ваши безбашенные достижения в путешествии</p>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="selfie">Сделал селфи с акулой</label> <input class="main-form__input"
+              type="checkbox" name="selfy" id="selfie" checked>
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="born">Обгорел на пляже</label> <input class="main-form__input"
+              type="checkbox" name="born" id="born" checked>
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Chack-Noris">Видел Чака Норриса</label> <input class="main-form__input"
+              type="checkbox" name="Chack-Noris" id="Chack-Noris">
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Souvenirs"> Накупил сувениров</label> <input class="main-form__input"
+              type="checkbox" name="Souvenirs" id="Souvenirs">
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Jack-screw">Удержал башню</label> <input class="main-form__input"
+              type="checkbox" name="Jack-screw" id="Jack-screw" checked>
+            <span class="main-form__span"></span>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="Hulk">Разгромил отель</label> <input class="main-form__input"
+              type="checkbox" name="Hulk" id="Hulk">
+            <span class="main-form__span"></span>
+          </fieldset>
+        </div>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="tel">Номер телефона</label>
+            <input class="main-form__input" type="tel" name="tel" id="tel"
+              pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="email">Адрес почты</label>
+            <input class="main-form__input" type="email" name="email" id="email" required placeholder="Введите почту*">
+          </fieldset>
+          <div class="main-form__wrap-radio">
+            <p class="main-form__text">С каким приложением путешествовали?</p>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="ios">Pink для iOS</label>
+              <input class="main-form__input" type="radio" value="Pink для iOS" id="ios" name="Apps" checked> <span
+                class="main-form__span"></span>
+            </fieldset>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="android">Pink на Android</label>
+              <input class="main-form__input" type="radio" value="Pink на Android" id="android" name="Apps"> <span
+                class="main-form__span"></span>
+            </fieldset>
+            <fieldset class="main-form__fieldset">
+              <label class="main-form__label" for="windows-phone">Windows Phone</label>
+              <input class="main-form__input" type="radio" value="Windows Phone" id="windows-phone" name="Apps"> <span
+                class="main-form__span"></span>
+            </fieldset>
+          </div>
+          <fieldset class="main-form__fieldset">
+            <label class="main-form__label" for="comment-field">Опишите свои эммоции</label>
+            <textarea class="main-form__content-text" name="comment" id="comment-field" rows="9"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <input class="main-form__submit" type="submit" value="Отправить форму" id="submit">
+          <label class="main-form__label" for="submit">* — обязательные поля</label>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item footer-logo">
+          <h2 class="visually-hidden">Логотип-ссылка организации</h2>
+          Здесь будет логотип</li>
+        <li class="footer__item footer-networks">
+          <h2 class="visually-hidden">Контакты в социальных сетях</h2>
+          <ul class="footer-networks__list networks">
+            <li class="networks-item">Twitter</li>
+            <li class="networks-item">Facebook</li>
+            <li class="networks-item">You tube</li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h2 class="visually-hidden">Авторы проекта</h2>
+          <p class="footer__label">Разработано<a class="footer-link"
+            href="https://htmlacademy.ru/intensive/adaptive">логотип HTML ACADEMY</a></p>
+        </li>
+      </ul>
+    </footer>
+</body>
+
+</html>
