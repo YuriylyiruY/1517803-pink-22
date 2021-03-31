@@ -28,15 +28,19 @@
       Видите, как не хватает ваших?</p>
   </section>
   <section class="photo-gallery">
-    <h2 class="visually-hidden">Фотография дня</h2>
-    <div class="photo-gallery__img photo-gallery__img--panorama-day"></div>
-    <div class="photo-gallery__name-user">Анна <span class="photo-gallery__time-ago">(5 минут назад)</span>
-    </div>
-    <p class="photo-gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и
-      смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-    <div class="photo-gallery__like">Нравится:<span class="photo-gallery__count-like">215</span></div>
     <h2 class="visually-hidden">Обзор выложенных фотографий пользователей</h2>
     <ul class="photo-gallery__list">
+      <li class="photo-gallery__comment-and-photo">
+        <h3 class="visually-hidden">Фотография дня</h3>
+        <div class="photo-gallery__user-comment photo-gallery__user-comment--panorama-day">
+          <div class="photo-gallery__img photo-gallery__img"></div>
+          <div class="photo-gallery__name-user">Анна <span class="photo-gallery__time-ago">(5 минут назад)</span>
+          </div>
+          <p class="photo-gallery__comment">Прыгать или нет? Напишите в комментарии свой совет и
+            смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="photo-gallery__like">Нравится:<span class="photo-gallery__count-like">215</span></div>
+        </div>
+      </li>
       <li class="photo-gallery__comment-and-photo">
         <div class="photo-gallery__user-comment">
           <div class="photo-gallery__photo"></div>
@@ -102,8 +106,7 @@
       <li class="slider-for-photo__effect-kind"></li>
     </ul>
     <div class="slider-for-photo__slider">
-      <input type="range" id="volume" name="volume"
-         min="0" max="100">
+      <input type="range" id="volume" name="volume" min="0" max="100">
     </div>
     <div class="slider-for-photo__buttons">
       <button class="slider-for-photo__button" type="button" value="Запостить"> </button>
