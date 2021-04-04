@@ -1,0 +1,53 @@
+.slider-comment {
+  text-align: center;
+  position: relative;
+
+  margin-top: -80px; //регулировка высоты до телефона
+
+  background-color: @white;
+  z-index: 2;
+}
+
+.slider-comment__list {
+  list-style: none;
+  padding: 0;
+}
+
+.slider-comment__head {
+  background-color: @white;
+  .font(30px; 18px; 700);
+  color: @black;
+  margin: 0;
+}
+
+.slider-comment__content {
+  .font(30px; 14px; 400);
+  color: @advantages-text;
+}
+
+.slider-comment__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-comment__button {
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.slider-comment__button--slider {
+  padding-bottom: 5px;
+}
+
+.slider-comment__slider {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

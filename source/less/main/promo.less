@@ -1,0 +1,50 @@
+.promo {
+  background-color: @background-header-blue;
+  text-align: center;
+}
+
+.promo__button-download {
+  .font(18px; 18px; 700);
+  background-color: @background-header-blue;
+  border: solid 3px @white;
+  border-radius: 29px;
+  color: @white;
+  margin-top: 28px;
+  width: 280px;
+  height: 55px;
+
+  &:hover {
+    background-color: @white;
+    color: @btn-red;
+  }
+
+  &:active {
+    background-color: @white;
+    color: @btn-red-download;
+  }
+}
+
+.promo__apps-list {
+  width: 204px;
+  margin: 32px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.promo__item--android {
+  align-self: flex-end;
+}
+
+.promo__item--microsoft {
+  align-self: flex-end;
+}
+
+.promo__text {
+  .font(24px; 14px; 300);
+  color: @white;
+  width: 280px;
+  padding: 28px 0 38px 0;
+  margin: 0 auto;
+}

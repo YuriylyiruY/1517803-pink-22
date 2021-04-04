@@ -1,0 +1,82 @@
+.header {
+  background-color: @background-header-blue;
+}
+
+.header__website-pages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__link {
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  .font(32px; 18px; 700);
+
+  &:hover {
+    color: @btn-red;
+  }
+
+  &:active {
+    color: @btn-red;
+    opacity: 0.3;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px @black;
+}
+
+.header__logo--close-list {
+  background-color: @gray-header-border-light;
+  border-bottom: solid 1px @white;
+}
+
+.header__item {
+  padding: 20px 0;
+  text-align: center;
+  border-top: solid 1px @gray-header-border-dark;
+  border-bottom: solid 1px @black;
+}
+
+.header__item--border--bottom {
+  border-bottom: solid 1px @white;
+}
+
+.header__item--border--top {
+  border-top: solid 1px @white;
+}
+
+.header__logo-link {
+  text-decoration: none;
+}
+
+.header__logo-button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+.header-btn-close,
+.header-btn-open {
+  fill: @white;
+
+  &:hover {
+    fill: @btn-red;
+  }
+
+  &:active {
+    fill: @btn-red;
+    opacity: 0.3;
+  }
+}
+
+.hidden {
+  display: none;
+}
