@@ -32,7 +32,10 @@
 }
 
 .header__logo--close-list {
-  background-color: @gray-header-border-light;
+  background-color: @background-header-blue;
+  position: relative;
+  opacity: 1;
+  z-index: 2;
   border-bottom: solid 1px @white;
 }
 
@@ -45,6 +48,10 @@
 
 .header__item--border--bottom {
   border-bottom: solid 1px @white;
+  background-color: @background-header-blue;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
 }
 
 .header__item--border--top {
@@ -66,6 +73,9 @@
 .header-btn-close,
 .header-btn-open {
   fill: @white;
+  position: relative;
+  opacity: 1;
+  z-index: 2;
 
   &:hover {
     fill: @btn-red;
@@ -75,8 +85,4 @@
     fill: @btn-red;
     opacity: 0.3;
   }
-}
-
-.hidden {
-  display: none;
 }
