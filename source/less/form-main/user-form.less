@@ -1,9 +1,5 @@
-.user-form__content-second-name,
-.user-form__content-name,
-.user-form__content-father-name,
-.user-form__label-post,
-.user-form__label-tel,
-.user-form__label-field {
+.user-form__content,
+.user-form__label {
   .font(30px, 14px, 400);
   text-transform: uppercase;
   color: @color-form;
@@ -23,6 +19,9 @@
 
 .user-form__label-field {
   text-align: center;
+  display: block;
+  .font(18px; 14px; 400);
+  text-transform: uppercase;
 }
 
 .user-form__input {
@@ -122,14 +121,6 @@
     background-color: @gray-header-border;
     border: 2px solid @gray-header-border;
   }
-}
-
-.user-form__label {
-  display: block;
-  text-align: center;
-  .font(18px; 14px; 400);
-  text-transform: uppercase;
-  color: @background-header-blue;
 }
 
 .user-form__span-color {

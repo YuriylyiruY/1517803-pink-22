@@ -1,0 +1,66 @@
+.slider-for-photo__input {
+  appearance: none;
+  background-color: #283645;
+  width: 240px;
+  height: 2px;
+  margin-bottom: 50px;
+  outline-style: none;
+}
+
+.slider-for-photo__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid @btn-red;
+  border-radius: 10px;
+  background-color: @white;
+
+  &:active {
+    background-color: @btn-red;
+  }
+}
+
+.slider-for-photo__button {
+  display: block;
+  width: 280px;
+  height: 55px;
+  border: 3px solid @btn-red;
+  border-radius: 30px;
+  background-color: @background-advantages;
+  .font(18px; 18px; 700);
+  color: @btn-red;
+  outline-style: none;
+
+  &:hover {
+    background-color: @btn-red;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @btn-red;
+    color: @white-down;
+  }
+}
+
+.slider-for-photo__button-gray {
+  display: block;
+  width: 280px;
+  height: 55px;
+  border: 3px solid @border-chanels;
+  outline-style: none;
+
+  border-radius: 30px;
+  background-color: @background-advantages;
+  .font(18px; 18px; 700);
+  color: @border-chanels;
+
+  &:hover {
+    border: 3px solid @border-chanels-hover;
+    color: @border-chanels-hover;
+  }
+
+  &:active {
+    background-color: @border-chanels-hover;
+    color: @white-down;
+  }
+}

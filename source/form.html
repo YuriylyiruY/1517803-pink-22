@@ -117,10 +117,10 @@
         </button>
       </div>
       <ul class="header__website-pages hidden">
-        <li class="header__item"><a class="header__link" href="#!">главная</a></li>
+        <li class="header__item"><a class="header__link" href="index.html">главная</a></li>
         <li class="header__item"><a class="header__link" href="#!">фотографии</a></li>
-        <li class="header__item header__item--border--top"><a class="header__link" href="form.html">конкурс</a></li>
-        <li class="header__item header__item--border--bottom"><a class="header__link"
+        <li class="header__item header__item--border-top"><a class="header__link" href="form.html">конкурс</a></li>
+        <li class="header__item header__item--border-bottom"><a class="header__link"
             href="https://htmlacademy.ru/intensive/adaptive">html
             academy</a></li>
       </ul>
@@ -128,8 +128,8 @@
   </header>
   <main class="main-form">
     <section class="main-introduction">
-      <h1 class="visually-hidden"> Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <img class="main-introduction__img" src="img/form-img.svg" alt="">
+      <h1 class="main-introduction__head"> Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <img class="main-introduction__img" src="img/img-form.svg" alt="">
       <p class="main-introduction__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!</p>
     </section>
@@ -137,17 +137,15 @@
       <h2 class="visually-hidden">Загрузка данных участника конкурса</h2>
       <form class="user-form__item-form" action="https://echo.htmlacademy.ru" autocomplete="off">
         <fieldset class="user-form__fieldset">
-          <label class="user-form__content-second-name" for="second-name">Фамилия:</label>
+          <label class="user-form__content" for="second-name">Фамилия:</label>
           <input class="user-form__input" id="second-name" name="Фамилия" type="text" required
             placeholder="Укажите фамилию*">
-        </fieldset>
-        <fieldset class="user-form__fieldset">
-          <label class="user-form__content-name" for="first-name">Имя:</label>
+
+          <label class="user-form__content" for="first-name">Имя:</label>
           <input class="user-form__input" id="first-name" name="Имя" type="text" required
             placeholder="Введите ваше имя*">
-        </fieldset>
-        <fieldset class="user-form__fieldset">
-          <label class="user-form__content-father-name" for="father-name">Отчество:</label>
+
+          <label class="user-form__content" for="father-name">Отчество:</label>
           <input class="user-form__input" id="father-name" name="Отчество" type="text" required
             placeholder="Ну и отчество тоже">
         </fieldset>
@@ -156,35 +154,30 @@
           <fieldset class="user-form__fieldset">
             <label class="user-form__label-checkbox" for="selfie">Сделал селфи с акулой</label> <input class="user-form__input-checkbox"
               type="checkbox" name="selfy" id="selfie" checked>
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-checkbox" for="born">Обгорел на пляже</label> <input class="user-form__input-checkbox"
               type="checkbox" name="born" id="born" checked>
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-checkbox" for="Chack-Noris">Видел Чака Норриса</label> <input class="user-form__input-checkbox"
               type="checkbox" name="Chack-Noris" id="Chack-Noris">
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-checkbox" for="Souvenirs"> Накупил сувениров</label> <input class="user-form__input-checkbox"
               type="checkbox" name="Souvenirs" id="Souvenirs">
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-checkbox" for="Jack-screw">Удержал башню</label> <input class="user-form__input-checkbox"
               type="checkbox" name="Jack-screw" id="Jack-screw" checked>
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-checkbox" for="Hulk">Разгромил отель</label> <input class="user-form__input-checkbox"
               type="checkbox" name="Hulk" id="Hulk">
           </fieldset>
         </div>
         <fieldset class="user-form__fieldset">
-          <label class="user-form__label-tel" for="tel">Номер телефона</label>
+          <label class="user-form__label" for="tel">Номер телефона</label>
           <input class="user-form__input" type="tel" name="tel" id="tel"
             pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
         </fieldset>
         <fieldset class="user-form__fieldset">
-          <label class="user-form__label-post" for="email">Адрес почты</label>
+          <label class="user-form__label" for="email">Адрес почты</label>
           <input class="user-form__input" type="email" name="email" id="email" required placeholder="Введите почту*">
         </fieldset>
         <div class="user-form__wrap-radio">
@@ -192,18 +185,16 @@
           <fieldset class="user-form__fieldset">
             <label class="user-form__label-radio" for="ios">Pink для iOS</label>
             <input class="user-form__input-radio" type="radio" value="Pink для iOS" id="ios" name="Apps" checked>
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-radio" for="andr">Pink на Android</label>
             <input class="user-form__input-radio" type="radio" value="Pink на Android" id="andr" name="Apps">
-          </fieldset>
-          <fieldset class="user-form__fieldset">
+
             <label class="user-form__label-radio" for="windows-phone">Windows Phone</label>
             <input class="user-form__input-radio" type="radio" value="Windows Phone" id="windows-phone" name="Apps">
           </fieldset>
         </div>
         <fieldset class="user-form__fieldset">
-          <label class="user-form__label-field" for="comment-field">Опишите свои эммоции</label>
+          <label class="user-form__label user-form__label-field" for="comment-field">Опишите свои эммоции</label>
           <textarea class="user-form__input-textarea" name="comment" id="comment-field" rows="9"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
