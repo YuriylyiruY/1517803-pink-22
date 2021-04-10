@@ -38,7 +38,6 @@
 
   &:active {
     background-color: @btn-red;
-    color: @white-down;
   }
 }
 
@@ -46,21 +45,22 @@
   display: block;
   width: 280px;
   height: 55px;
-  border: 3px solid @border-chanels;
+  border: 3px solid @background-header-blue;
   outline-style: none;
-
   border-radius: 30px;
   background-color: @background-advantages;
   .font(18px; 18px; 700);
-  color: @border-chanels;
+  color: @background-header-blue;
+  opacity: 0.1;
 
   &:hover {
-    border: 3px solid @border-chanels-hover;
-    color: @border-chanels-hover;
+    border: 3px solid @background-header-blue;
+    color: @background-header-blue;
+    opacity: 0.3;
   }
 
   &:active {
-    background-color: @border-chanels-hover;
-    color: @white-down;
+    background-color: @background-header-blue;
+    opacity: 0.3;
   }
 }
