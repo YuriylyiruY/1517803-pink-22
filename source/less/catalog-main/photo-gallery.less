@@ -1,0 +1,59 @@
+.photo-gallery__list {
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item {
+  margin: 0 auto;
+  background-color: @background-advantages;
+  width: 280px;
+}
+
+.gallery-item__user-comment {
+  margin-top: 26px;
+  margin-left: 17px;
+}
+
+.gallery-item__img {
+  position: relative;
+  left: -37px;
+}
+
+.gallery-item__photo {
+  text-align: center;
+  position: relative;
+  left: -17px;
+}
+
+.gallery-item__name-user {
+  .font(24px; 14px; 700);
+  color: @background-header-blue;
+}
+
+.gallery-item__time-ago {
+  .font(24px; 12px; 300);
+}
+
+.gallery-item__comment {
+  .font(24px; 14px; 400);
+  margin-bottom: 13px;
+}
+
+.gallery-item__like {
+  .font(24px; 12px; 400);
+  color: @btn-red;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  margin-left: 46px;
+  padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    margin-top: 5px;
+    left: 47px;
+    background-image: url("../img/heart.svg");
+  }
+}

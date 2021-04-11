@@ -3,8 +3,31 @@
   background-color: #283645;
   width: 240px;
   height: 2px;
-  margin-bottom: 50px;
   outline-style: none;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: @background-header-blue;
+    position: absolute;
+    left: 9px;
+    margin-top: 30px;
+  }
+}
+
+.slider-for-photo__slider {
+  width: 320px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-for-photo__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 41px;
 }
 
 .slider-for-photo__input::-webkit-slider-thumb {
@@ -38,11 +61,14 @@
 
   &:active {
     background-color: @btn-red;
+    color: @white;
+    opacity: 0.3;
   }
 }
 
 .slider-for-photo__button-gray {
   display: block;
+  margin-top: 30px;
   width: 280px;
   height: 55px;
   border: 3px solid @background-header-blue;
@@ -61,6 +87,54 @@
 
   &:active {
     background-color: @background-header-blue;
+    color: @white;
     opacity: 0.3;
   }
+}
+
+.slider-for-photo__header {
+  .font(30px; 14px; 400);
+  color: @background-header-blue;
+  text-align: center;
+  background-color: @white;
+  padding-top: 49px;
+  padding-bottom: 46px;
+}
+
+.slider-for-photo__photo {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.slider-for-photo {
+  width: 320px;
+  margin: 0 auto;
+  background-color: @background-advantages;
+}
+
+.slider-for-photo__control {
+  fill: @background-header-blue;
+  opacity: 0.3;
+
+  &:hover {
+    fill: @background-header-blue;
+    opacity: 0.5;
+  }
+}
+
+.slider-for-photo__control-active {
+  fill: @btn-red;
+  opacity: 1;
+}
+
+.slider-for-photo__effects {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.slider-for-photo__effect-kind-contrast,
+.slider-for-photo__effect-kind-fill {
+  align-self: center;
 }

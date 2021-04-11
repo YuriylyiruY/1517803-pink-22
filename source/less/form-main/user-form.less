@@ -19,7 +19,6 @@
   text-align: center;
   width: 218px;
   height: 29px;
-  padding-left: 51px;
   padding-top: 41px;
   padding-bottom: 37px;
 }
@@ -109,6 +108,7 @@
 
 .user-form__submit {
   display: block;
+  outline: none;
   width: 276px;
   height: 59px;
   margin: 49px auto;
@@ -121,6 +121,14 @@
 
   &:hover {
     background-color: @green-hover;
+    border: 2px solid @green-hover;
+    border-radius: 1px;
+  }
+
+  &:active {
+    color: @white-gray;
+    border: 2px solid @green-hover;
+    border-radius: 1px;
   }
 
   &:disabled {
