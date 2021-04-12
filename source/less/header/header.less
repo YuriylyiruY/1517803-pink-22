@@ -29,6 +29,8 @@
   justify-content: space-between;
   padding: 20px;
   border-bottom: solid 1px @black;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .header__logo--close-list {
@@ -63,8 +65,8 @@
   outline: none;
 }
 
-.header-btn-close,
-.header-btn-open {
+.header__btn-close,
+.header__btn-open {
   fill: @white;
   position: relative;
   opacity: 1;
@@ -78,4 +80,8 @@
     fill: @btn-red;
     opacity: 0.3;
   }
+}
+
+.header__hidden {
+  display: none;
 }

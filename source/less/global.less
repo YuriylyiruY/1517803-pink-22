@@ -16,8 +16,11 @@ body {
   width: 320px;
   border: solid 1px blue;
   background-color: @white;
+  //margin:0 auto;
 }
 
-.hidden {
-  display: none;
+@media (min-width: @tablet-width) {
+  min-width: 660px;
 }
+
+@tablet-width: 660px;
