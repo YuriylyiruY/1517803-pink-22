@@ -1,11 +1,18 @@
 .header {
   background-color: @background-header-blue;
+  width: 100%;
 }
 
 .header__website-pages {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__link {
@@ -28,23 +35,22 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  border-bottom: solid 1px @black;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 18px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .header__logo--close-list {
-  background: @black-transparent;
-  position: relative;
-  z-index: 2;
   border-bottom: solid 1px transparent;
-}
-
-.header__item {
-  padding: 20px 0;
-  text-align: center;
-  border-top: solid 1px @gray-header-border-dark;
-  border-bottom: solid 1px @black;
 }
 
 .header__item--border-bottom {
@@ -53,8 +59,31 @@
   z-index: 2;
 }
 
+.header__item {
+  padding: 20px 0;
+  text-align: center;
+  border-top: solid 1px @gray-header-border-dark;
+  border-bottom: solid 1px @black;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-color: @background-header-blue;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 25%;
+    z-index: 2;
+    background: @black-transparent;
+  }
+}
+
 .header__logo-link {
   text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .header__logo-button {
@@ -84,4 +113,59 @@
 
 .header__hidden {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.header__hidden-button {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.header__back-color {
+  background-color: @background-header-blue;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  border-bottom: solid 1px @black;
+
+  @media (min-width: @desktop-width) {
+    background: @black-transparent;
+    width: 30%;
+  }
+}
+
+.header__back-color--absent {
+  width: 100%;
+  background: @black-transparent;
+  position: relative;
+  z-index: 3;
+  border-bottom: solid 1px transparent;
+}
+
+.header__logo-sunglasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+.header__logo-pink {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+.header__nav {
+  z-index: 5;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }

@@ -6,6 +6,10 @@
 
   background-color: @white;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+  }
 }
 
 .slider-comment__list {
@@ -18,11 +22,28 @@
   .font(30px; 18px; 700);
   color: @black;
   margin: 0;
+  margin-top: -465px;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    order: 2;
+  }
 }
 
 .slider-comment__content {
   .font(30px; 14px; 400);
   color: @advantages-text;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    .font(30px; 18px; 400);
+    width: 620px;
+    height: 73px;
+    padding: 20px;
+  }
 }
 
 .slider-comment__controls {
@@ -50,4 +71,52 @@
   &:active {
     opacity: 0.1;
   }
+}
+
+.slider-comment__profession {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    .font(30px; 14px; 400);
+    order: 3;
+  }
+}
+
+.slider-comment__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.slider-comment__advertisement {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 30px;
+    margin: -30px auto 0 auto;
+    width: 660px;
+  }
+}
+
+.slider-comment__advertisement-head {
+  .font(36px; 30px; 700);
+  color: @black;
+}
+
+.slider-comment__advertisement-content {
+  .font(24px; 14px; 400);
+  color: @advantages-text;
+}
+
+.slider-comment__advertisement-link {
+  color: @btn-red;
+  .font(24px; 14px; 400);
+}
+
+.price-app-slider__item-border-tablet {
+  width: 153px;
 }

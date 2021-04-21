@@ -24,6 +24,12 @@
   padding: 0;
   list-style: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+  }
 }
 
 .footer__list-networks {
@@ -31,12 +37,24 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    width: 100%;
+  }
 }
 
 .footer__item-academy {
   display: flex;
   justify-content: center;
   padding: 30px 0 20px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 35px 0 20px 0;
+  }
 }
 
 .footer__academy {
@@ -70,5 +88,22 @@
   &:active {
     fill: @background-header-blue;
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+}
+
+.footer__item {
+  @media (min-width: @tablet-width) {
+    height: 127px;
+  }
+}
+
+.footer__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    width: 185px;
   }
 }

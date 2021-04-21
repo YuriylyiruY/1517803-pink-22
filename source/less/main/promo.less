@@ -1,6 +1,13 @@
 .promo {
   background-color: @background-promo;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 250px 250px 1fr;
+    grid-template-rows: 150px 150px 1fr 150px;
+    margin-top: 32px;
+  }
 }
 
 .promo__head {
@@ -14,6 +21,20 @@
   text-align: center;
   .font(33px; 24px; 300);
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    .font(48px; 40px; 300);
+    position: static;
+    width: 200px;
+    height: 140px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-left: -20px;
+  }
 }
 
 .promo__button-download {
@@ -34,6 +55,18 @@
   &:active {
     background-color: @white;
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 40px 20px 20px 20px;
+    background-color: transparent;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 3;
+    margin-top: 130px;
+    margin-left: -50px;
+  }
 }
 
 .promo__apps-list {
@@ -43,6 +76,17 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    z-index: 3;
+    margin-top: 100px;
+    margin-left: -50px;
+  }
 }
 
 .promo__item--android {
@@ -59,6 +103,17 @@
   width: 280px;
   padding: 28px 0 38px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    z-index: 3;
+    margin: 0;
+    margin-left: -50px;
+  }
 }
 
 .promo__img {
@@ -67,6 +122,16 @@
   height: 462px;
   margin-top: -153px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    height: 729px;
+    margin-top: -121px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 1;
+  }
 }
 
 .promo__img-phone {
@@ -74,4 +139,26 @@
   margin-top: -291px;
   margin-left: -19px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.promo__img-phone-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: static;
+    height: 545px;
+    margin-top: 67px;
+    margin-left: 90px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 1;
+    margin-right: 20px;
+  }
 }
