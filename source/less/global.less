@@ -17,19 +17,13 @@ body {
   background-color: @white;
 }
 
-@media (min-width: @tablet-width) {
-  min-width: 660px;
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: @desktop-width) {
-  min-width: 1196px;
-}
-
 .body {
   margin: 0;
 }
 
-@tablet-width: 660px;
-@desktop-width: 1196px;
+.container {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}

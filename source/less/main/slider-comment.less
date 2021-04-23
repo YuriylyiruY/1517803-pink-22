@@ -100,6 +100,10 @@
     margin: -30px auto 0 auto;
     width: 660px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: @background-advantages;
+  }
 }
 
 .slider-comment__advertisement-head {
@@ -119,4 +123,18 @@
 
 .price-app-slider__item-border-tablet {
   width: 153px;
+}
+
+.slider-comment__advertisement-img {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider-comment__advertisement-img-gray {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

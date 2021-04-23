@@ -6,6 +6,7 @@
   <title>HTML Academy: Пинк</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="js/main.js"></script>
 </head>
 
@@ -101,23 +102,27 @@
   </svg>
   <header class="header">
     <nav class="header__nav">
-      <div class="header__logo header__logo--close-list">
-        <a class="header__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="header__logo-pink" width="74" height="23">
-            <use xlink:href="#pink"></use>
-          </svg>
-        </a>
-        <button class="header__logo-button">
-          <svg class="header__btn-close header__hidden" width="23" height="23">
-            <use xlink:href="#btn-close-header"></use>
-          </svg>
-          <svg class="header__btn-open" width="50" height="24">
-            <use xlink:href="#btn-open-header"></use>
-          </svg>
-        </button>
+      <div class="header__back-color header__back-color--absent">
+        <div class="header__logo header__logo--close-list">
+          <a class="header__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="header__logo-sunglasses" width="70" height="40">
+              <use xlink:href="#sunglasses-header"></use>
+            </svg> <svg class="header__logo-pink" width="74" height="23">
+              <use xlink:href="#pink"></use>
+            </svg>
+          </a>
+          <button class="header__logo-button">
+            <svg class="header__btn-close header__hidden header__hidden-button" width="23" height="23">
+              <use xlink:href="#btn-close-header"></use>
+            </svg>
+            <svg class="header__btn-open header__hidden-button" width="50" height="24">
+              <use xlink:href="#btn-open-header"></use>
+            </svg>
+          </button>
+        </div>
       </div>
       <ul class="header__website-pages header__hidden">
-        <li class="header__item"><a class="header__link" href="index.html">главная</a></li>
+        <li class="header__item"><a class="header__link" href="#!">главная</a></li>
         <li class="header__item"><a class="header__link" href="catalog.html">фотографии</a></li>
         <li class="header__item header__item--border-top"><a class="header__link" href="form.html">конкурс</a></li>
         <li class="header__item header__item--border-bottom"><a class="header__link"
