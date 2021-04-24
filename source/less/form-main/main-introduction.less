@@ -1,18 +1,51 @@
 .main-introduction__img {
   position: relative;
-  width: 320px;
-  margin-top: -152px;
+  width: 100%;
+  margin-top: -222px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-introduction__img-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+    margin-top: -400px;
+  }
 }
 
 .main-introduction__text {
+  position: relative;
+  z-index: 3;
   .font(30px, 14px, 400);
   color: @advantages-text;
-  padding-left: 22px;
+  //padding-left: 22px;
   padding-bottom: 45px;
+  padding-top: 50px;
   text-align: center;
+  margin: 0 auto;
   width: 280px;
   height: 70px;
+
+  @media (min-width: @tablet-width) {
+    .font(30px, 18px, 400);
+    width: 490px;
+    height: 73px;
+  }
+}
+
+.main-introduction__text-span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    .font(30px, 18px, 400);
+  }
 }
 
 .main-introduction {
@@ -21,14 +54,20 @@
 }
 
 .main-introduction__head {
-  margin: 0;
   position: relative;
   z-index: 3;
   width: 268px;
   height: 84px;
-  top: 40px;
-  left: 40px;
   text-align: center;
   .font(33px; 24px; 300);
   color: @white;
+  margin: 0 auto;
+  padding-top: 70px;
+
+  @media (min-width: @tablet-width) {
+    .font(68px; 50px; 300);
+    padding-top: 120px;
+    width: 620px;
+    height: 175px;
+  }
 }
