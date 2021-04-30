@@ -1,28 +1,97 @@
 .photo-gallery__list {
   list-style: none;
   padding: 0;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1000px;
+  }
 }
 
 .gallery-item {
-  margin: 0 auto;
-  background-color: @background-advantages;
   width: 280px;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 17px;
+    width: 300px;
+  }
 }
 
 .gallery-item__user-comment {
-  margin-top: 26px;
-  margin-left: 17px;
+
+  margin-left: 35px;
+  height: 150px;
+  background-color: @background-advantages;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
 }
 
-.gallery-item__img {
-  position: relative;
-  left: -37px;
+.gallery-item-panorama__img {
+  height: 137px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.gallery-item-panorama__img-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 660px;
+    height: 509px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.gallery-item-panorama__img-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 1200px;
+    height: 506px;
+    margin: 0 auto;
+  }
 }
 
 .gallery-item__photo {
+  width: 320px;
+  height: 180px;
+  margin: 0 auto;
   text-align: center;
-  position: relative;
-  left: -17px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.gallery-item__photo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .gallery-item__name-user {
@@ -53,7 +122,63 @@
     height: 12px;
     position: absolute;
     margin-top: 5px;
-    left: 47px;
+    margin-left: -37px;
     background-image: url("../img/heart.svg");
+  }
+}
+.gallery-item-panorama__name-user {
+  .font(24px; 14px; 700);
+  color: @background-header-blue;
+}
+
+.gallery-item-panorama__time-ago {
+  .font(24px; 12px; 300);
+}
+
+.gallery-item-panorama__comment {
+  .font(24px; 14px; 400);
+  margin-bottom: 13px;
+}
+
+.gallery-item-panorama__like {
+  .font(24px; 12px; 400);
+  color: @btn-red;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  margin-left: 46px;
+  padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -37px;
+    background-image: url("../img/heart.svg");
+  }
+}
+.gallery-item-panorama__user-comment {
+  height: 200px;
+  background-color: @background-advantages;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 950px;
+    margin: 0 auto;
+  }
+}
+
+.gallery-item-panorama {
+  @media (min-width: @tablet-width) {
+    margin-left: -20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -100px;
   }
 }
