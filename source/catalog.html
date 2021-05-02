@@ -165,10 +165,10 @@
       <p class="catalog-introduction__text">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
     </section>
-    <section class="photo-gallery">
+    <section class="gallery">
       <h2 class="visually-hidden">Обзор выложенных фотографий пользователей</h2>
-      <ul class="photo-gallery__list">
-        <li class="photo-gallery__item  gallery-item-panorama">
+      <ul class="gallery__list">
+        <li class="gallery-item-panorama">
           <h3 class="visually-hidden">Фотография дня</h3>
           <div class="gallery-item-panorama__img"><img src="img/panorama.jpg" alt="" width="320" height="137"></div>
           <div class="gallery-item-panorama__img-tablet"><img src="img/panorama.jpg" alt="" width="660" height="509"></div>
@@ -181,7 +181,7 @@
             <div class="gallery-item-panorama__like">Нравится:<span class="gallery-item-panorama__count-like">215</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/auto.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/auto.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -190,7 +190,7 @@
             <div class="gallery-item__like">Нравится:<span class="gallery-item__count-like">356</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/drums.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/drums.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -200,7 +200,7 @@
             <div class="gallery-item__like">Нравится:<span class="gallery-item__count-like">666</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/hall.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/hall.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -210,7 +210,7 @@
             <div class="gallery-item__like">Нравится:<span class="gallery-item__count-like">215</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/kuban.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/kuban.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -220,7 +220,7 @@
             <div class="gallery-item__like">Нравится:<span class="gallery-item__count-like">4</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/mountain.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/mountain.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -230,7 +230,7 @@
             <div class="gallery-item__like">Нравится:<span class="gallery-item__count-like">150</span></div>
           </div>
         </li>
-        <li class="photo-gallery__item gallery-item">
+        <li class="gallery-item">
           <div class="gallery-item__photo"><img src="img/air.jpg" alt="" width="280" height="180"></div>
           <div class="gallery-item__photo-tablet"><img src="img/air.jpg" alt="" width="300" height="300"></div>
           <div class="gallery-item__user-comment">
@@ -249,30 +249,7 @@
       <div class="slider-for-photo__photo"><img src="img/winter.jpg" alt="" width="280" height="374"></div>
       <div class="slider-for-photo__wrap">
         <ul class="slider-for-photo__effects">
-          <li class="slider-for-photo__effect-kind"> <svg class="slider-for-photo__control-active" width="44"
-              height="44">
-              <use xlink:href="#crop"></use>
-            </svg></li>
-          <li class="slider-for-photo__effect-kind slider-for-photo__effect-kind-fill"> <svg
-              class="slider-for-photo__control" width="48" height="43">
-              <use xlink:href="#fill"></use>
-            </svg></li>
-          <li class="slider-for-photo__effect-kind slider-for-photo__effect-kind-contrast"> <svg
-              class="slider-for-photo__control" width="32" height="32">
-              <use xlink:href="#contrast"></use>
-            </svg></li>
-        </ul>
-        <div class="slider-for-photo__slider">
-          <input class="slider-for-photo__input" type="range" id="volume" name="volume" min="0" max="100">
-        </div>
-        <div class="slider-for-photo__buttons">
-          <button class="slider-for-photo__button" type="button"> Запостить</button>
-          <button class="slider-for-photo__button-gray" type="button">Отмена</button>
-        </div>
-      </div>
-      <div class="slider-for-photo__wrap-tablet">
-        <ul class="slider-for-photo__effects-tablet">
-          <li class="slider-for-photo__effect-kind-tablet">
+          <li class="slider-for-photo__effect-kind">
             <div class="slider-for-photo__effect-kind"> <svg class="slider-for-photo__control-active" width="44"
                 height="44">
                 <use xlink:href="#crop"></use>
@@ -281,7 +258,7 @@
               <input class="slider-for-photo__input" type="range" id="volume-crop" name="volume" min="0" max="100">
             </div>
           </li>
-          <li class="slider-for-photo__effect-kind-tablet">
+          <li class="slider-for-photo__effect-kind">
             <div class="slider-for-photo__effect-kind slider-for-photo__effect-kind-fill"> <svg
                 class="slider-for-photo__control" width="48" height="43">
                 <use xlink:href="#fill"></use>
@@ -290,7 +267,7 @@
               <input class="slider-for-photo__input" type="range" id="volume-fill" name="volume" min="0" max="100">
             </div>
           </li>
-          <li class="slider-for-photo__effect-kind-tablet">
+          <li class="slider-for-photo__effect-kind">
             <div class="slider-for-photo__effect-kind slider-for-photo__effect-kind-contrast"> <svg
                 class="slider-for-photo__control" width="32" height="32">
                 <use xlink:href="#contrast"></use>
@@ -300,6 +277,9 @@
             </div>
           </li>
         </ul>
+        <div class="slider-for-photo__slider-mobile">
+          <input class="slider-for-photo__input" type="range" id="volume" name="volume" min="0" max="100">
+        </div>
         <div class="slider-for-photo__buttons">
           <button class="slider-for-photo__button" type="button"> Запостить</button>
           <button class="slider-for-photo__button-gray" type="button">Отмена</button>
