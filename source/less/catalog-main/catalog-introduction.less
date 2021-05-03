@@ -11,9 +11,9 @@
 }
 
 .catalog-introduction__img {
-  position: relative;
+  display: block;
   width: 100%;
-  margin-top: -65px;
+  margin-top: -106px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
@@ -25,6 +25,20 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+    margin-top: -136px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.catalog-introduction__img-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
     display: block;
     width: 100%;
     margin-top: -136px;
