@@ -1,30 +1,8 @@
-.main-introduction__img {
-  position: relative;
-  width: 100%;
-  margin-top: -222px;
-  z-index: 1;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.main-introduction__img-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 100%;
-    margin-top: -400px;
-  }
-}
-
 .main-introduction__text {
   position: relative;
   z-index: 3;
   .font(30px, 14px, 400);
   color: @advantages-text;
-  //padding-left: 22px;
   padding-bottom: 45px;
   padding-top: 50px;
   text-align: center;
@@ -69,5 +47,74 @@
     padding-top: 120px;
     width: 620px;
     height: 175px;
+  }
+}
+
+.main-introduction__img {
+  display: block;
+  margin-top: -216px;
+  z-index: -1;
+  background-image: url("../img/back-form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 237px;
+  width: 100%;
+  height: 237px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/back-form@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 237px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.main-introduction__img-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: -382px;
+    background-image: url("../img/img-form-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 100% 440px;
+    width: 100%;
+    height: 440px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/img-form-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100% 440px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-introduction__img-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: -376px;
+    background-image: url("../img/img-form-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 394px;
+    width: 100%;
+    height: 394px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/img-form-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100% 394px;
+    }
   }
 }

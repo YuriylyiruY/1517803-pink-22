@@ -32,13 +32,19 @@
 }
 
 .slider-for-photo__slider-mobile {
-  width: 320px;
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  left: -203px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    display: flex;
+    width: 320px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    position: static;
+    justify-content: center;
   }
 }
 
@@ -185,8 +191,11 @@
   }
 }
 
-.slider-for-photo__effect-kind-contrast,
 .slider-for-photo__effect-kind-fill {
+  align-self: center;
+}
+
+.slider-for-photo__effect-kind-contrast {
   align-self: center;
 }
 
@@ -197,4 +206,8 @@
     display: block;
     width: 330px;
   }
+}
+
+.slider-for-photo__effect-kind {
+  width: 50px;
 }
