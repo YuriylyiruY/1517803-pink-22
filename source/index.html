@@ -157,9 +157,21 @@
     <section class="promo">
       <h1 class="promo__head"> Взгляните на жизнь
         иначе!</h1>
-      <img class="promo__img" src="img/back-mobile.png" alt="" width="320" height="462">
-      <img class="promo__img-phone" src="img/phone-screen.png" alt="рука с телефоном" width="320" height="286">
-      <img class="promo__img-phone-tablet" src="img/iphone-tablet.png" alt="рука с телефоном">
+      <div class="promo__img"></div>
+      <div class="promo__img-tablet"></div>
+      <div class="promo__img-desktop"></div>
+      <!-- <picture>
+          <source media="(min-width: 1200px)" srcset="img/telephon-screen.png 1x, img/telephon-screen@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/telephon-screen.png 1x, img/telephon-screen@2x.png 2x">
+          <source media="(min-width: 320px)" srcset="img/telephon-screen.png 1x, img/telephon-screen@2x.png 2x">
+          <img class="promo__img-phone" src="img/telephon-screen.png" alt="Пример">
+        </picture> -->
+      <img class="promo__img-phone" src="img/telephon-screen.png"
+        srcset="img/telephon-screen.png 1x, img/telephon-screen@2x.png 2x" alt="рука с телефоном">
+      <img class="promo__img-phone-tablet" src="img/telephon-screen-tablet.png"
+        srcset="img/telephon-screen-tablet.png 1x, img/telephon-screen-tablet@2x.png 2x" alt="рука с телефоном">
+      <img class="promo__img-phone-desktop" src="img/telephon-screen-desktop.png" height="645"
+        srcset="img/telephon-screen-desktop.png 1x, img/telephon-screen-desktop@2x.png 2x" alt="рука с телефоном">
       <button class="promo__button-download">Скачать приложение</button>
       <ul class="promo__apps-list">
         <li class="promo__item"> <svg class="promo__logo-pink" width="47" height="56">
@@ -183,7 +195,8 @@
         <div class="advantages__wrap-size">
           <div class="advantages__greeting-tablet"><img src="img/iphone.png" alt="приветствие от приложения" width="268"
               height="547">
-            <img class="advantages__greeting-tablet-img" src="img/iphone-screen.png" width="237" height="421" alt="экран телефона"></div>
+            <img class="advantages__greeting-tablet-img" src="img/iphone-screen.png" width="237" height="421"
+              alt="экран телефона"></div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <p class="advantages__img"><img src="img/iphone.png" width="186" height="382" alt="корпус телефона"></p>
@@ -215,7 +228,8 @@
     </section>
     <section class="slider-comment">
       <h2 class="visually-hidden"> Делимся впечалениями о приложении</h2>
-      <div class="slider-comment__advertisement"><img class="slider-comment__advertisement-img" src="img/timer.svg" alt="изображение таймера">
+      <div class="slider-comment__advertisement"><img class="slider-comment__advertisement-img" src="img/timer.svg"
+          alt="изображение таймера">
         <img class="slider-comment__advertisement-img-gray" src="img/timer-gray.svg" alt="изображение таймера">
         <div class="slider-comment__advertisement-text">
           <p class="slider-comment__advertisement-head">Эффект
@@ -230,9 +244,9 @@
         <li class="slider-comment__item">
           <p class="slider-comment__head">Николай Петров<p class="slider-comment__profession">25 лет, водитель трамвая
             </p>
-          <p class="slider-comment__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные
-            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="slider-comment__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
       </ul>
       <div class="slider-comment__controls">
@@ -404,8 +418,8 @@
         </li>
       </ul>
       <div class="contacts__map"><iframe class="contacts__map-google"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603824136705!2d30.32332844738809!3d59.93871586989493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1608879638917!5m2!1sru!2sru"
-              style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603824136705!2d30.32332844738809!3d59.93871586989493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1608879638917!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
     </section>
   </main>
   <footer class="footer">
