@@ -10,6 +10,10 @@
   @media (min-width: @tablet-width) {
     margin-top: 100px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .slider-comment__list {
@@ -102,7 +106,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @background-advantages;
+    //background-color: @background-advantages;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -136,5 +144,18 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+}
+
+.slider-comment__advertisement-text {
+  @media (min-width: @desktop-width) {
+    width: 500px;
+  }
+}
+
+.slider-comment__wrap {
+  @media (min-width: @desktop-width) {
+    background-color: @background-advantages;
+    width: 100%;
   }
 }

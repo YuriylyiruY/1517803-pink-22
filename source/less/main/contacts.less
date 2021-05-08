@@ -10,11 +10,12 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    border-bottom: solid 1px @btn-red;
+    // border-bottom: solid 1px @btn-red;
   }
 
   @media (min-width: @desktop-width) {
     border-bottom: none;
+    .font(69px; 50px; 300);
   }
 }
 
@@ -34,8 +35,8 @@
 
 .contacts__item {
   @media (min-width: @tablet-width) {
-    width: 320px;
-    margin: 0 auto;
+    width: 310px;
+    // margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,4 +89,20 @@
 .contacts__map-google {
   width: 100%;
   height: 200px;
+  position: relative;
+  z-index: -1;
+  margin-top: -166px;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
+}
+
+.contacts__map-element {
+  width: 100%;
+  min-height: 264px;
 }

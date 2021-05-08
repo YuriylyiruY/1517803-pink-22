@@ -174,9 +174,18 @@
       <ul class="gallery__list">
         <li class=" gallery__panorama">
           <h3 class="visually-hidden">Фотография дня</h3>
-          <div class="gallery__panorama-img"><img src="img/panorama.jpg" alt="" width="320" height="137"></div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama.jpg 1x, img/panorama.jpg 2x" alt="рука с телефоном"
+              width="1200" height="506">
+            <source media="(min-width: 660px)" srcset="img/panorama.jpg 1x, img/panorama.jpg 2x" alt="рука с телефоном"
+              width="660" height="509">
+            <source media="(min-width: 320px)" srcset="img/panorama.jpg 1x, img/panorama.jpg 2x" alt="рука с телефоном"
+              width="320" height="137">
+            <img class="gallery__panorama-img" src="img/panorama.jpg" alt="Пример">
+          </picture>
+          <!-- <div class="gallery__panorama-img"><img src="img/panorama.jpg" alt="" width="320" height="137"></div>
           <div class="gallery__panorama-img-tablet"><img src="img/panorama.jpg" alt="" width="660" height="509"></div>
-          <div class="gallery__panorama-img-desktop"><img src="img/panorama.jpg" alt="" width="1200" height="506"></div>
+          <div class="gallery__panorama-img-desktop"><img src="img/panorama.jpg" alt="" width="1200" height="506"></div> -->
           <div class="gallery__panorama-user-comment">
             <div class="gallery__panorama-name-user">Анна <span class="gallery__panorama-time-ago">(5 минут
                 назад)</span>
