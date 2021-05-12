@@ -180,13 +180,11 @@
           alt="рука с телефоном">
         <img class="promo__img-phone" src="img/telephon-screen.png" alt="Пример">
       </picture> -->
+      <picture>
 
-      <img class="promo__img-phone" src="img/telephon-screen.png"
-        srcset="img/telephon-screen-desktop.png 1x, img/telephon-screen-desktop@2x.png 2x" alt="рука с телефоном">
-      <!-- <img class="promo__img-phone-tablet" src="img/telephon-screen-tablet.png"
-        srcset="img/telephon-screen-tablet.png 1x, img/telephon-screen-tablet@2x.png 2x" alt="рука с телефоном"> -->
-      <!-- <img class="promo__img-phone-desktop" src="img/telephon-screen-desktop.png" height="645"
-        srcset="img/telephon-screen-desktop.png 1x, img/telephon-screen-desktop@2x.png 2x" alt="рука с телефоном"> -->
+      <source media="(min-width: 320px)"srcset="img/phone-promo.png 1x, img/phone-promo@2x.png 2x" alt="рука с телефоном" width="300" height="286">
+      <img class="promo__img-phone" src="img/phone-promo.png" alt="рука с телефоном">
+      </picture>
       <button class="promo__button-download">Скачать приложение</button>
       <ul class="promo__apps-list">
         <li class="promo__item"> <svg class="promo__logo-pink" width="47" height="56">
@@ -316,20 +314,33 @@
           <p class="price-app-slider__item-border">Розовый фильтр <svg
               class="price-app-slider__yes price-app-slider__tablet" width="31" height="21">
               <use xlink:href="#yes-filter"></use>
-            </svg></p>
+            </svg>
+            <svg
+            class="price-app-slider__yes-before" width="31" height="21">
+            <use xlink:href="#yes-filter"></use>
+          </svg></p>
         </li>
         <li class="price-app-slider__item ">
-          <p class="price-app-slider__item-border">Смайлики<svg class="price-app-slider__yes price-app-slider__tablet"
+          <p class="price-app-slider__item-border price-app-slider__smile">Смайлики<svg class="price-app-slider__yes price-app-slider__tablet"
               width="31" height="21">
               <use xlink:href="#yes-filter"></use>
-            </svg></p>
+            </svg>
+            <svg class="price-app-slider__no-before"
+            width="27" height="27">
+            <use xlink:href="#no-filter"></use>
+          </svg>
+        </p>
 
         </li>
         <li class="price-app-slider__item price-app-slider__item--no">
           <p class="price-app-slider__item-border">Комментарии<svg class="price-app-slider__no price-app-slider__tablet"
               width="27" height="27">
               <use xlink:href="#no-filter"></use>
-            </svg></p>
+            </svg>
+            <svg class="price-app-slider__no-before"
+            width="27" height="27">
+            <use xlink:href="#no-filter"></use>
+          </svg></p>
         </li>
 
       </ul>
@@ -444,14 +455,14 @@
       <ul class="contacts__list container">
         <li class="contacts__item">
           <p class="contacts__item-title">Звоните:</p>
-          <a class="contacts__item-link">+7 (812) 555-66-66</a>
+          <a class="contacts__item-link contacts__item-link-tel">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item">
-          <p class="contacts__item-title">Пишите:</p>
+          <p class="contacts__item-title contacts__item-write">Пишите:</p>
           <a class="contacts__item-link">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
-          <p class="contacts__item-title">Приезжайте в гости:</p>
+          <p class="contacts__item-title contacts__item-title-guest">Приезжайте в гости:</p>
           <p class="contacts__item-text">ул. Большая
             Конюшенная, 19/8</p>
         </li>

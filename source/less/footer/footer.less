@@ -7,6 +7,7 @@
   text-align: center;
   vertical-align: middle;
 
+
   &:hover {
     border: 3px solid @background-header-blue;
   }
@@ -14,10 +15,6 @@
   &:active {
     opacity: 0.1;
   }
-}
-
-.footer__youtube {
-  opacity: 1;
 }
 
 .footer__list {
@@ -50,7 +47,7 @@
 .footer__item-academy {
   display: flex;
   justify-content: center;
-  padding: 30px 0 20px 0;
+  padding: 28px 0 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 35px 0 20px 0;
@@ -72,13 +69,13 @@
 
 .footer__link {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 10px;
 }
 
 .footer__logo-pink {
   fill: @background-header-blue;
-  margin-top: 45px;
+  margin-top: 42px;
   margin-bottom: 35px;
 
   &:hover {
@@ -97,13 +94,35 @@
 }
 
 .footer__item {
+  height: 118px;
+
   @media (min-width: @tablet-width) {
     height: 127px;
   }
 }
 
 .footer__item:nth-child(2) {
+  height: 60px;
+
   @media (min-width: @tablet-width) {
     width: 185px;
   }
+}
+
+.footer__facebook {
+  margin-top: 7px;
+}
+
+.footer__youtube {
+  opacity: 1;
+  margin-top: 7px;
+}
+
+.footer__twitter {
+  margin-top: 7px;
+}
+
+.footer__label {
+  .font(17px; 14px; 400);
+  margin-right: 3px;
 }

@@ -1,10 +1,11 @@
 .price-app-slider {
   text-align: center;
+  margin-top: 19px;
   background-color: @background-advantages;
 }
 
 .price-app-slider__grey {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -20,7 +21,8 @@
 
 .price-app-slider__header {
   background-color: @background-header-blue;
-
+  height: 98px;
+  margin-top: 36px;
 
   &::before {
     content: "";
@@ -28,7 +30,7 @@
     position: absolute;
     width: 74px;
     height: 74px;
-    left: 29px;
+    left: 20px;
 
     @media (min-width: @tablet-width) {
       background-image: none;
@@ -45,8 +47,8 @@
 .price-app-slider__rotate {
   position: absolute;
   transform: rotate(-45deg);
-
-  left: 43px;
+  margin-top: 15px;
+  left: 34px;
   color: @white;
   .font(30px; 14px; 400);
   text-transform: uppercase;
@@ -71,7 +73,8 @@
 }
 
 .price-app-slider__price {
-  padding-bottom: 35px;
+  padding-bottom: 47px;
+  height: 10px;
   margin: 0 20px 0 20px;
   border-left: solid 2px @gray-header-border;
   border-right: solid 2px @gray-header-border;
@@ -91,12 +94,13 @@
 }
 
 .price-app-slider__text {
-  padding-top: 19px;
-
+  padding-top: 13px;
+  height: 27px;
+  text-transform: uppercase;
   margin: 0 20px 0 20px;
   border-left: solid 2px @gray-header-border;
   border-right: solid 2px @gray-header-border;
-  .font(30px; 18px; 700);
+  .font(30px; 16px; 700);
   color: @white;
 
   @media (min-width: @tablet-width) {
@@ -114,7 +118,7 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding: 14px 20px;
+  padding: 15px 17px 14px 20px;
   margin: 0 20px 0 20px;
   border-left: solid 2px @gray-header-border;
   border-right: solid 2px @gray-header-border;
@@ -136,16 +140,21 @@
   }
 }
 
+.price-app-slider__smile {
+  padding-bottom: 14px;
+}
+
 .price-app-slider__button {
   border-style: none;
   outline: none;
   background-color: transparent;
+  margin: 0 2px;
 }
 
 .price-app-slider__controls {
   display: flex;
   justify-content: center;
-  padding: 25px 0 35px 0;
+  padding: 23px 0 42px 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -153,7 +162,7 @@
 }
 
 .price-app-slider__button--slider {
-  padding-bottom: 5px;
+  margin-top: -6px;
   opacity: 0.3;
 
   &:hover {
@@ -189,8 +198,18 @@
   }
 }
 
-.price-app-slider__yes,
+.price-app-slider__yes {
+  padding-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+}
+
 .price-app-slider__no {
+  margin-top: 3px;
+  margin-right: 2px;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
   }
@@ -205,5 +224,26 @@
 .price-app-slider__item-border-tablet--border {
   @media (min-width: @tablet-width) {
     border-top: solid 2px @gray-header-border;
+  }
+}
+
+.price-app-slider__no-before {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: -68px;
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-app-slider__yes-before {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -70px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

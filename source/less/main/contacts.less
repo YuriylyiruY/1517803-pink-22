@@ -3,14 +3,13 @@
 }
 
 .contacts__tagline {
-  .font(29px; 24px; 300);
+  .font(30px; 23px; 300);
   color: @advantages-text;
   width: 280px;
-  margin: 0 auto;
+  margin: 41px auto 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    // border-bottom: solid 1px @btn-red;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,24 +65,31 @@
 .contacts__item-title {
   .font(25px; 18px; 700);
   color: @black;
+  margin-top: 32px;
+  margin-bottom: -1px;
 }
 
 .contacts__item-link {
-  .font(33px; 24px; 300);
+  .font(33px; 23px; 300);
   color: @btn-red;
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .contacts__item-text {
-  .font(33px; 24px; 300);
+  .font(33px; 23px; 300);
   color: @btn-red;
   width: 280px;
   margin: 0 auto;
 }
 
 .contacts__item-text:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+}
+
+.contacts__map {
+  height: 200px;
+  margin-top: -57px;
 }
 
 .contacts__map-google {
@@ -91,7 +97,7 @@
   height: 200px;
   position: relative;
   z-index: -1;
-  margin-top: -166px;
+  margin-top: 16px;
 
   @media (min-width: @tablet-width) {
     height: 374px;
@@ -104,5 +110,18 @@
 
 .contacts__map-element {
   width: 100%;
-  min-height: 264px;
+  min-height: 64px;
+}
+
+.contacts__item-write {
+  margin-top: 17px;
+  margin-bottom: 2px;
+}
+
+.contacts__item-link-tel {
+  .font(33px; 24px; 300);
+}
+
+.contacts__item-title-guest {
+  margin-top: 20px;
 }
