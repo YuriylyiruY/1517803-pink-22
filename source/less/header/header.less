@@ -39,9 +39,10 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 90%;
-    margin: 0 auto;
-    padding: 18px 0;
+    width: 95%;
+    height: 83px;
+    //margin: 0 auto;
+    padding: 25px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,6 +116,11 @@
     fill: @btn-red;
     opacity: 0.3;
   }
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    left: -4px;
+  }
 }
 
 .header__hidden {
@@ -165,6 +171,8 @@
   @media (min-width: @tablet-width) {
     display: inline-block;
     margin-bottom: 5px;
+    margin-left: 3px;
+    width: 67px;
   }
 }
 

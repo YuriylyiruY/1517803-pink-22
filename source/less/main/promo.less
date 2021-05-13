@@ -33,9 +33,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin-bottom: 20px;
-    // margin-top: 100px;
-    // margin-left: -520px;
-    // margin-right: 0;
   }
 }
 
@@ -70,7 +67,6 @@
     grid-row-end: 3;
     z-index: 3;
     margin-top: 130px;
-    //margin-left: -550px;
   }
 }
 
@@ -90,7 +86,6 @@
     grid-row-end: 4;
     z-index: 3;
     margin-top: 100px;
-    //margin-left: -550px;
   }
 }
 
@@ -146,6 +141,29 @@
       z-index: 2;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    z-index: 3;
+    margin: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("../img/phone-promo-desktop.png");
+      background-repeat: no-repeat;
+      background-size: 793px 645px;
+      width: 793px;
+      height: 645px;
+      margin-top: -467px;
+      z-index: 2;
+    }
+  }
 }
 
 .promo__img-phone {
@@ -180,24 +198,6 @@
   height: 462px;
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/back-image@2x.png");
-    background-repeat: no-repeat;
-    background-size: 100% 462px;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
-}
-
-.promo__img-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
     display: inline-block;
     margin-top: -118px;
     background-image: url("../img/back-image-tablet.png");
@@ -210,41 +210,92 @@
     grid-row-start: 1;
     grid-row-end: 5;
     z-index: 1;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/back-image-tablet@2x.png");
-      background-repeat: no-repeat;
-      background-size: 100% 729px;
-    }
   }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.promo__img-desktop {
-  display: none;
 
   @media (min-width: @desktop-width) {
     display: block;
     margin-top: -242px;
-    // background-image: url("../img/back-image-desktop.png");
+    background-image: url("../img/back-image-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 853px;
     width: 100%;
     height: 853px;
+  }
 
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    z-index: 1;
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/back-image@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 462px;
 
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/back-image-desktop@2x.png");
-      background-repeat: no-repeat;
-      background-size: 100% 853px;
+    @media (min-width: @tablet-width) {
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/back-image-tablet@2x.png");
+        background-repeat: no-repeat;
+        background-size: 100% 729px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/back-image-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-size: 100% 853px;
+      }
     }
   }
 }
+
+// .promo__img-tablet {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//     display: inline-block;
+//     margin-top: -118px;
+//     background-image: url("../img/back-image-tablet.png");
+//     background-repeat: no-repeat;
+//     background-size: 100% auto;
+//     min-width: 660px;
+//     height: 729px;
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: 1;
+//     grid-row-end: 5;
+//     z-index: 1;
+
+//     @media (min-resolution: 1.5dppx) {
+//       background-image: url("../img/back-image-tablet@2x.png");
+//       background-repeat: no-repeat;
+//       background-size: 100% 729px;
+//     }
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+// }
+
+// .promo__img-desktop {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: block;
+//     margin-top: -242px;
+//     background-image: url("../img/back-image-desktop.png");
+//     background-repeat: no-repeat;
+//     background-size: 100% 853px;
+//     width: 100%;
+//     height: 853px;
+
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: 1;
+//     grid-row-end: 5;
+//     z-index: 1;
+
+//     @media (min-resolution: 1.5dppx) {
+//       background-image: url("../img/back-image-desktop@2x.png");
+//       background-repeat: no-repeat;
+//       background-size: 100% 853px;
+//     }
+//   }
+// }

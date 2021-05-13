@@ -12,7 +12,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 15px;
-    width: 100px;
+    width: auto;
     height: 40px;
   }
 }
@@ -40,6 +40,7 @@
   border: 2px solid @gray-header-border;
   border-radius: 1px;
   outline-style: none;
+  width: 236px;
 
   @media (min-width: @tablet-width) {
     width: 76%;
@@ -48,7 +49,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 50%;
+    width: 260px;
   }
 
   .user-form__input-tel {
@@ -236,10 +237,7 @@
   background-color: @green;
 
   @media (min-width: @tablet-width) {
-    order: 6;
-
     margin: 0;
-    margin-top: 40px;
   }
 
   &:hover {
@@ -358,15 +356,6 @@
   @media (min-width: @tablet-width) {
     width: 620px;
     order: 3;
-    display: flex;
-
-    & .user-form__label {
-      position: relative;
-      top: 90px;
-      left: 50px;
-      height: 0;
-      width: auto;
-    }
 
     & .user-form__input {
       display: block;
@@ -375,18 +364,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 936px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-
     & .user-form__label {
-      position: relative;
-      top: 110px;
-      left: 0;
-      height: 0;
       width: 200px;
       margin: 0;
       padding: 0;
@@ -429,17 +407,8 @@
   color: @advantages-text;
 
   @media (min-width: @tablet-width) {
-    order: 6;
     margin: 0;
-    position: relative;
-    left: 400px;
-    bottom: 50px;
     width: 200px;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 10px;
-    top: 40px;
   }
 }
 
@@ -462,12 +431,12 @@
     display: block;
     position: relative;
     left: 500px;
-    bottom: 60px;
+    bottom: 90px;
   }
 
   @media (min-width: @desktop-width) {
     left: 280px;
-    bottom: 60px;
+    bottom: 90px;
   }
 }
 
@@ -478,12 +447,12 @@
     display: block;
     position: relative;
     left: 500px;
-    bottom: 60px;
+    bottom: 90px;
   }
 
   @media (min-width: @desktop-width) {
     left: 280px;
-    bottom: 60px;
+    bottom: 90px;
   }
 }
 
@@ -517,6 +486,7 @@
 
   @media (min-width: @desktop-width) {
     width: 350px;
+    height: 30px;
   }
 }
 
@@ -527,6 +497,7 @@
 
   @media (min-width: @desktop-width) {
     width: 350px;
+    height: 30px;
   }
 }
 
@@ -668,5 +639,50 @@
     width: 936px;
     height: 200px;
     margin: 20px 0;
+  }
+}
+
+.user-form__wraper-contact-info {
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 940px;
+    height: 150px;
+    margin-bottom: 0;
+  }
+}
+
+.user-form__name {
+  height: 150px;
+}
+
+.user-form__content-name {
+  @media (min-width: @tablet-width) {
+    width: 510px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.user-form__label-last-submit {
+  @media (min-width: @tablet-width) {
+    order: 6;
+    display: flex;
+    height: 50px;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
