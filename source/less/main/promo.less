@@ -24,7 +24,7 @@
   color: @white;
 
   @media (min-width: @tablet-width) {
-    .font(48px; 40px; 300);
+    .font(47px; 38px; 300);
     position: static;
     width: 200px;
     height: 140px;
@@ -32,7 +32,9 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-bottom: 20px;
+    margin-top: 63px;
+    margin-left: -10px;
+    z-index: 7;
   }
 }
 
@@ -59,14 +61,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 40px 20px 20px 20px;
+    .font(19px; 18px; 700);
     background-color: transparent;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    z-index: 3;
-    margin-top: 130px;
+    z-index: 7;
+    margin-top: 87px;
+    margin-left: -60px;
+    width: 300px;
   }
 }
 
@@ -84,23 +88,23 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    z-index: 3;
-    margin-top: 100px;
+    z-index: 7;
+    margin-top: 37px;
+    margin-left: -32px;
   }
 }
 
 .promo__item--android {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .promo__item--microsoft {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .promo__text {
   .font(24px; 14px; 300);
   letter-spacing: -0.3px;
-
   color: @white;
   width: 250px;
   padding: 16px 0 31px 0;
@@ -120,13 +124,16 @@
   }
 
   @media (min-width: @tablet-width) {
+    .font(25px; 18px; 300);
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-
     z-index: 3;
     margin: 0;
+    margin-top: -28px;
+    margin-left: -59px;
+    width: 300px;
 
     &::before {
       content: "";
@@ -134,11 +141,12 @@
       position: absolute;
       background-image: url("../img/phone-promo-tablet.png");
       background-repeat: no-repeat;
-      background-size: 500px 545px;
-      width: 500px;
+      background-size: 477px 545px;
+      width: 477px;
       height: 545px;
-      margin-top: -467px;
-      z-index: 2;
+      margin-top: -383px;
+      margin-left: 142px;
+      z-index: -1;
     }
   }
 
@@ -147,7 +155,6 @@
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-
     z-index: 3;
     margin: 0;
 
@@ -199,7 +206,7 @@
 
   @media (min-width: @tablet-width) {
     display: inline-block;
-    margin-top: -118px;
+    margin-top: -142px;
     background-image: url("../img/back-image-tablet.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
