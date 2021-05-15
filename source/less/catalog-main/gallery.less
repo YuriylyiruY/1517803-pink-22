@@ -17,8 +17,7 @@
 }
 
 .gallery__item {
-  width: 280px;
-  height: auto;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
     margin-top: 17px;
@@ -27,8 +26,9 @@
 }
 
 .gallery__item-user-comment {
-  margin-left: 35px;
   height: 150px;
+  width: 280px;
+  margin: 0 auto;
   background-color: @background-advantages;
 
   @media (min-width: @tablet-width) {
@@ -42,8 +42,13 @@
 }
 
 .gallery__panorama-img {
-  //height: 137px;
   height: auto;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .gallery__item-photo {
@@ -129,6 +134,7 @@
   height: 200px;
   background-color: @background-advantages;
   width: 280px;
+  margin: -4px auto 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -137,17 +143,14 @@
 
   @media (min-width: @desktop-width) {
     width: 950px;
-    margin: 0 auto;
   }
 }
 
 .gallery__panorama {
-  @media (min-width: @tablet-width) {
-    margin-left: -20px;
-    width: 100%;
-  }
+  width: 320px;
+  margin: 0 auto;
 
-  @media (min-width: @desktop-width) {
-    margin-left: -100px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
   }
 }
