@@ -2,11 +2,32 @@
   text-align: center;
   margin-top: 19px;
   background-color: @background-advantages;
+  @media (min-width: @tablet-width) {
+    z-index: -1;
+    background-color: transparent;
+    margin-top: 200px;
+    &::before{
+      content:"";
+      background-image: url("../img/grey-background-price.svg");
+      background-size: 100% 400px;
+      background-repeat: no-repeat;
+      width: 660px;
+      height: 393px;
+      position: absolute;
+      margin-top: -97px;
+      left:0;
+      z-index: -1;
+    }
+
+  }
 }
 
 .price-app-slider__grey {
   margin-bottom: 10px;
   width: 100%;
+  @media (min-width: @tablet-width) {
+    display:none;
+  }
 }
 
 .price-app-slider__list {
@@ -36,6 +57,10 @@
       background-image: none;
     }
   }
+  @media (min-width: @tablet-width) {
+height: 80px;
+
+  }
 }
 
 .standart {
@@ -55,8 +80,8 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: 10px;
-    left: -55px;
+    top: 11px;
+    left: -57px;
     margin: 0;
     margin-top: -30px;
   }
@@ -86,12 +111,14 @@
     border-left: none;
     padding-bottom: 10px;
     width: 153px;
+    height: 40px;
   }
 
   @media (min-width: @desktop-width) {
     width: 234px;
   }
 }
+
 
 .price-app-slider__text {
   padding-top: 13px;
@@ -108,7 +135,7 @@
     margin-top: -30px;
     border-left: none;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 13px;
     text-transform: uppercase;
     .font(30px; 16px; 700);
   }
@@ -133,6 +160,8 @@
     text-transform: none;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -181,6 +210,7 @@
     display: flex;
     padding-left: 0;
     justify-content: center;
+    margin-top: -100px;
   }
 }
 
@@ -194,7 +224,10 @@
 
 .price-app-slider__item-tablet {
   @media (min-width: @tablet-width) {
-    margin-top: 49px;
+    margin-top: 84px;       //передвигает розовый
+    width: 100%;
+    margin-right: -3px;
+
   }
 }
 
@@ -203,6 +236,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+    padding-top: 2px;
   }
 }
 
@@ -212,12 +246,14 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+    margin-top: -1px;
   }
 }
 
 .price-app-slider__item-border-tablet {
   @media (min-width: @tablet-width) {
     border-left: solid 2px @gray-header-border;
+
   }
 }
 
@@ -245,5 +281,14 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+.price-app-slider__span{
+  @media (min-width: @tablet-width) {
+    width: 94%;
+    margin-top:-2px;
+    margin-left: 16px;
+    height: 40px;
+    text-align: left;
   }
 }

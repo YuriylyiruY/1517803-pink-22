@@ -1,5 +1,30 @@
 .contacts {
   text-align: center;
+z-index: -1;
+  &::before {
+    content: "";
+    background-image: url("../img/triangle.svg");
+    background-size: 320px 67px;
+    position: absolute;
+    width: 320px;
+    height: 67px;
+    margin-top: 345px;
+    left: 0px;
+    z-index: 3;
+
+    @media (min-width: @tablet-width) {
+      content: "";
+      background-image: url("../img/triangle.svg");
+      background-size: 660px 200px;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 660px;
+      height: 150px;
+      margin-top: 278px;
+      left: 0px;
+      z-index: 1;
+    }
+  }
 }
 
 .contacts__tagline {
@@ -10,6 +35,8 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 111px;
+    .font(54px; 38.9px; 300);
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +52,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    z-index: 77;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,7 +63,8 @@
 .contacts__item {
   @media (min-width: @tablet-width) {
     width: 310px;
-    // margin: 0 auto;
+    height: 110px;
+    z-index: 77;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,6 +96,12 @@
   color: @black;
   margin-top: 32px;
   margin-bottom: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: -10px;
+    margin-bottom: 2px;
+  }
 }
 
 .contacts__item-link {
@@ -87,9 +122,14 @@
   margin-bottom: 5px;
 }
 
+.contacts__item-link-mail {
+  @media (min-width: @tablet-width) {
+    margin-left: 12px;
+  }
+}
+
 .contacts__map {
   height: 200px;
-  margin-top: -57px;
 }
 
 .contacts__map-google {
@@ -99,8 +139,10 @@
   z-index: -1;
   margin-top: 16px;
 
+
+
   @media (min-width: @tablet-width) {
-    height: 374px;
+    height: 390px;
   }
 
   @media (min-width: @desktop-width) {
@@ -116,12 +158,28 @@
 .contacts__item-write {
   margin-top: 17px;
   margin-bottom: 2px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: 8px;
+  }
 }
 
 .contacts__item-link-tel {
   .font(33px; 24px; 300);
+
+  @media (min-width: @tablet-width) {
+    margin-left: -8px;
+    height: 80px;
+  }
 }
 
 .contacts__item-title-guest {
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    margin-left: 3px;
+    margin-bottom: 4px;
+  }
 }

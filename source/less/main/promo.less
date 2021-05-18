@@ -36,6 +36,14 @@
     margin-left: -10px;
     z-index: 7;
   }
+
+  @media (min-width: @desktop-width) {
+    .font(68px; 48px; 300);
+    width: 300px;
+    height: 174px;
+    margin-left: -219px;
+    padding-top: 5px;
+  }
 }
 
 .promo__button-download {
@@ -72,6 +80,12 @@
     margin-left: -60px;
     width: 300px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -220px;
+    margin-top: 158px;
+    .font(19px; 21px; 700);
+  }
 }
 
 .promo__apps-list {
@@ -92,14 +106,36 @@
     margin-top: 37px;
     margin-left: -32px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 130px;
+    margin-left: -190px;
+  }
 }
 
 .promo__item--android {
-  margin-top: 5px;
+  margin-top: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 8px;
+    margin-left: -1px;
+  }
 }
 
 .promo__item--microsoft {
-  margin-top: 8px;
+  margin-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 12px;
+  }
 }
 
 .promo__text {
@@ -120,6 +156,7 @@
     width: 300px;
     height: 286px;
     margin-top: -478px;
+    left: 0px;
     z-index: 2;
   }
 
@@ -145,7 +182,7 @@
       width: 477px;
       height: 545px;
       margin-top: -383px;
-      margin-left: 142px;
+      margin-left: 163px;
       z-index: -1;
     }
   }
@@ -157,6 +194,9 @@
     grid-row-end: 5;
     z-index: 3;
     margin: 0;
+    margin-top: -39px;
+      margin-left: -220px;
+
 
     &::before {
       content: "";
@@ -164,33 +204,13 @@
       position: absolute;
       background-image: url("../img/phone-promo-desktop.png");
       background-repeat: no-repeat;
-      background-size: 793px 645px;
-      width: 793px;
+      background-size: 819px 645px;
+      width: 819px;
       height: 645px;
-      margin-top: -467px;
+      margin-top: -472px;
+      margin-left:251px;
       z-index: 2;
     }
-  }
-}
-
-.promo__img-phone {
-  position: absolute;
-  margin-top: -286px;
-  margin-left: -20px;
-  z-index: 1;
-  height: 286px;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-    position: static;
-    height: 645px;
-    margin-top: -40px;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    z-index: 1;
-    margin-left: 100px;
   }
 }
 
@@ -221,7 +241,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-top: -242px;
+    margin-top: -142px;
     background-image: url("../img/back-image-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 853px;
@@ -251,58 +271,3 @@
     }
   }
 }
-
-// .promo__img-tablet {
-//   display: none;
-
-//   @media (min-width: @tablet-width) {
-//     display: inline-block;
-//     margin-top: -118px;
-//     background-image: url("../img/back-image-tablet.png");
-//     background-repeat: no-repeat;
-//     background-size: 100% auto;
-//     min-width: 660px;
-//     height: 729px;
-//     grid-column-start: 1;
-//     grid-column-end: 5;
-//     grid-row-start: 1;
-//     grid-row-end: 5;
-//     z-index: 1;
-
-//     @media (min-resolution: 1.5dppx) {
-//       background-image: url("../img/back-image-tablet@2x.png");
-//       background-repeat: no-repeat;
-//       background-size: 100% 729px;
-//     }
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     display: none;
-//   }
-// }
-
-// .promo__img-desktop {
-//   display: none;
-
-//   @media (min-width: @desktop-width) {
-//     display: block;
-//     margin-top: -242px;
-//     background-image: url("../img/back-image-desktop.png");
-//     background-repeat: no-repeat;
-//     background-size: 100% 853px;
-//     width: 100%;
-//     height: 853px;
-
-//     grid-column-start: 1;
-//     grid-column-end: 5;
-//     grid-row-start: 1;
-//     grid-row-end: 5;
-//     z-index: 1;
-
-//     @media (min-resolution: 1.5dppx) {
-//       background-image: url("../img/back-image-desktop@2x.png");
-//       background-repeat: no-repeat;
-//       background-size: 100% 853px;
-//     }
-//   }
-// }

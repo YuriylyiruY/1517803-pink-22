@@ -8,7 +8,8 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    margin-top: 100px;
+    margin-top: 152px;
+    z-index: 4;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,11 +27,13 @@
   .font(30px; 18px; 700);
   color: @black;
   margin: 0;
-  margin-top: -449px;
+  margin-top: -456px;
   padding-top: 41px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding-top: 31px;
+    .font(30px; 20px; 700);
     order: 2;
   }
 }
@@ -101,12 +104,17 @@
     width: 620px;
     height: 73px;
     padding: 20px;
+    margin-top: 65px;
   }
 }
 
 .slider-comment__controls {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+  }
 }
 
 .slider-comment__button {
@@ -156,9 +164,10 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
     padding-top: 30px;
-    margin: -30px auto 0 auto;
-    width: 660px;
+    margin: -195px auto 0 auto;
+    width: 600px;
   }
 
   @media (min-width: @desktop-width) {
@@ -172,16 +181,34 @@
 .slider-comment__advertisement-head {
   .font(36px; 30px; 700);
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-top: 67px;
+  }
 }
 
 .slider-comment__advertisement-content {
   .font(24px; 14px; 400);
   color: @advantages-text;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-top: -21px;
+  }
 }
 
 .slider-comment__advertisement-link {
   color: @btn-red;
   .font(24px; 14px; 400);
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: -5px;
+    width: 100%;
+  }
 }
 
 .price-app-slider__item-border-tablet {
@@ -189,6 +216,11 @@
 }
 
 .slider-comment__advertisement-img {
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+    margin-left: -11px;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -203,6 +235,11 @@
 }
 
 .slider-comment__advertisement-text {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+
+  }
+
   @media (min-width: @desktop-width) {
     width: 500px;
   }
