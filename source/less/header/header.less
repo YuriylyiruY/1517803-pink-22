@@ -270,7 +270,6 @@
     display: flex;
     width: 940px;
     margin: 0 auto;
-
     //background-color: @black-transparent;
   }
 }
@@ -306,5 +305,16 @@
     height: 70%;
     border-bottom: 2px solid currentColor;
     position: relative;
+    z-index: 5;
+  }
+}
+
+.header__active-form {
+  @media (min-width: @desktop-width) {
+    width: auto;
+    height: 65%;
+    border-bottom: 2px solid currentColor;
+    position: relative;
+    z-index: 5;
   }
 }
