@@ -146,20 +146,6 @@
   padding: 16px 0 31px 0;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/phone-promo.png");
-    background-repeat: no-repeat;
-    background-size: 300px 286px;
-    width: 300px;
-    height: 286px;
-    margin-top: -478px;
-    left: 0px;
-    z-index: 2;
-  }
-
   @media (min-width: @tablet-width) {
     .font(25px; 18px; 300);
     grid-column-start: 2;
@@ -169,22 +155,8 @@
     z-index: 3;
     margin: 0;
     margin-top: -28px;
-    margin-left: -59px;
+    margin-left: -60px;
     width: 300px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      background-image: url("../img/phone-promo-tablet.png");
-      background-repeat: no-repeat;
-      background-size: 477px 545px;
-      width: 477px;
-      height: 545px;
-      margin-top: -383px;
-      margin-left: 163px;
-      z-index: -1;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -195,24 +167,27 @@
     z-index: 3;
     margin: 0;
     margin-top: -39px;
-      margin-left: -220px;
-
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      background-image: url("../img/phone-promo-desktop.png");
-      background-repeat: no-repeat;
-      background-size: 819px 645px;
-      width: 819px;
-      height: 645px;
-      margin-top: -472px;
-      margin-left:251px;
-      z-index: 2;
-    }
+    margin-left: -220px;
   }
 }
+
+.promo__img-phone {
+  position: relative;
+  top: 176px;
+  left: -10px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin-top: 184px;
+    margin-left: 143px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 208px;
+    margin-left: 120px;
+  }
+}
+
 
 .promo__img {
   display: block;
@@ -247,6 +222,7 @@
     background-size: 100% 853px;
     width: 100%;
     height: 853px;
+    z-index: -1;
   }
 
   @media (min-resolution: 1.5dppx) {

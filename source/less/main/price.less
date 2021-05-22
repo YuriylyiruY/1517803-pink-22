@@ -2,31 +2,51 @@
   text-align: center;
   margin-top: 19px;
   background-color: @background-advantages;
+
   @media (min-width: @tablet-width) {
     z-index: -1;
     background-color: transparent;
     margin-top: 200px;
-    &::before{
-      content:"";
-      background-image: url("../img/grey-background-price.svg");
-      background-size: 100% 400px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/grey-background-price-tablet.png");
+      background-size: 100% 403px;
       background-repeat: no-repeat;
-      width: 660px;
-      height: 393px;
+      width: 100%;
+      height: 403px;
       position: absolute;
-      margin-top: -97px;
-      left:0;
+      margin-top: -107px;
+      left: 0;
       z-index: -1;
     }
+  }
 
+  @media (min-width: @desktop-width) {
+    margin-top: 285px;
+
+
+    &::before {
+      content: "";
+      background-image: url("../img/grey-background-price-desktop.png");
+      background-size: 100% 534px;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 534px;
+      position: absolute;
+      margin-top: -150px;
+      left: 0;
+      z-index: -1;
+    }
   }
 }
 
 .price-app-slider__grey {
   margin-bottom: 10px;
   width: 100%;
+
   @media (min-width: @tablet-width) {
-    display:none;
+    display: none;
   }
 }
 
@@ -57,16 +77,24 @@
       background-image: none;
     }
   }
-  @media (min-width: @tablet-width) {
-height: 80px;
 
+  @media (min-width: @tablet-width) {
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
   }
 }
 
-.standart {
+.price-app-slider__standart {
   background-image: url("../img/ribbon.svg");
   background-repeat: no-repeat;
   background-size: 61px 61px;
+
+  @media (min-width: @desktop-width) {
+    background-size: 75px 75px;
+  }
 }
 
 .price-app-slider__rotate {
@@ -87,7 +115,8 @@ height: 80px;
   }
 
   @media (min-width: @desktop-width) {
-    left: -97px;
+    left: -90px;
+    top: 17px;
   }
 }
 
@@ -116,9 +145,16 @@ height: 80px;
 
   @media (min-width: @desktop-width) {
     width: 234px;
+    .font(30px; 24px; 300);
+    height: 45px;
   }
 }
 
+.price-app-slider__price-baza {
+  @media (min-width: @desktop-width) {
+    width: 236px;
+  }
+}
 
 .price-app-slider__text {
   padding-top: 13px;
@@ -138,6 +174,25 @@ height: 80px;
     padding-top: 13px;
     text-transform: uppercase;
     .font(30px; 16px; 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+    padding-bottom: 4px;
+    .font(30px; 18px; 700);
+    margin-left: 3px;
+  }
+}
+
+.price-app-slider__text-standart {
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
+  }
+}
+
+.price-app-slider__text-anlim {
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
   }
 }
 
@@ -166,6 +221,14 @@ height: 80px;
 
   @media (min-width: @desktop-width) {
     width: 234px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+}
+
+.price-app-slider__item-border-left {
+  @media (min-width: @tablet-width) {
+    border-left: solid 2px @gray-header-border;
   }
 }
 
@@ -212,6 +275,11 @@ height: 80px;
     justify-content: center;
     margin-top: -100px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 2px;
+    margin-top: -104px;
+  }
 }
 
 .price-app-slider__list-double {
@@ -224,10 +292,13 @@ height: 80px;
 
 .price-app-slider__item-tablet {
   @media (min-width: @tablet-width) {
-    margin-top: 84px;       //передвигает розовый
+    margin-top: 84px; //передвигает розовый
     width: 100%;
     margin-right: -3px;
+  }
 
+  @media (min-width: @desktop-width) {
+    margin-top: 104px;
   }
 }
 
@@ -253,7 +324,7 @@ height: 80px;
 .price-app-slider__item-border-tablet {
   @media (min-width: @tablet-width) {
     border-left: solid 2px @gray-header-border;
-
+    border-right: none;
   }
 }
 
@@ -283,12 +354,19 @@ height: 80px;
     display: none;
   }
 }
-.price-app-slider__span{
+
+.price-app-slider__span {
   @media (min-width: @tablet-width) {
     width: 94%;
-    margin-top:-2px;
+    margin-top: -2px;
     margin-left: 16px;
     height: 40px;
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    .font(30px; 18px; 400);
+    margin-left: 22px;
+    margin-top: -5px;
   }
 }

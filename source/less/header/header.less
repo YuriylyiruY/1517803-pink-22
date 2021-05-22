@@ -1,6 +1,10 @@
 .header {
   background-color: @background-header-blue;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    background: @black-transparent;
+  }
 }
 
 .header__website-pages {
@@ -28,6 +32,11 @@
   &:active {
     color: @btn-red;
     opacity: 0.3;
+
+    @media (min-width: @desktop-width) {
+      color: @white-gray;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -36,8 +45,6 @@
     display: flex;
     width: 220px;
     justify-content: flex-start;
-
-
   }
 }
 
@@ -56,20 +63,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 400px;
-    ;
+    //margin: 0 auto;
+    width: 150px;
+    margin: 0;
+    margin-right: 96px;
   }
 }
 
 .header__logo--close-list {
   border-bottom: solid 1px transparent;
-}
-
-.header__item--border-bottom {
-  background-color: @background-header-blue;
-  position: relative;
-  z-index: 2;
 }
 
 .header__item {
@@ -79,6 +81,7 @@
   border-bottom: solid 1px @black;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
     position: relative;
     background-color: @background-header-blue;
     z-index: 2;
@@ -87,7 +90,8 @@
   @media (min-width: @desktop-width) {
     width: 180px;
     z-index: 2;
-    background: @black-transparent;
+    background-color: transparent;
+    //background: @black-transparent;
     border: none;
     display: flex;
     padding-top: 45px;
@@ -102,11 +106,11 @@
   }
 }
 
-
 .header__logo-link {
   text-decoration: none;
   height: 28px;
   margin-top: 2px;
+
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
@@ -169,8 +173,8 @@
   border-bottom: solid 1px @black;
 
   @media (min-width: @desktop-width) {
-    background: @black-transparent;
     width: 30%;
+    background-color: transparent;
   }
 }
 
@@ -182,7 +186,7 @@
   border-bottom: solid 1px transparent;
 
   @media (min-width: @desktop-width) {
-    background: @black-transparent;
+    background: transparent;
     width: 40%;
   }
 }
@@ -194,7 +198,19 @@
     display: inline-block;
     margin-bottom: 5px;
     margin-left: 3px;
-    width: 67px;
+    width: 145px;
+    height: 40px;
+    fill: @white;
+
+    //fill:red;
+    &:hover {
+      fill: @btn-red;
+    }
+
+    &:active {
+      fill: @white-gray;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -203,9 +219,21 @@
 }
 
 .header__logo-pink {
+  fill: @white;
+
+  &:hover {
+    fill: @btn-red;
+  }
+
+  &:active {
+    fill: @background-header-blue;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
-    display: inline-block;
+    //display: inline-block;
     margin-bottom: 5px;
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -214,35 +242,54 @@
 }
 
 .header__logo-pink-star {
+  display: none;
+
   @media (min-width: @desktop-width) {
-    display: inline-block;
-    margin-bottom: 5px;
+    display: block;
     padding-top: 2px;
-    padding-left: 4px;
+    margin-left: -1px;
+    fill: @white;
+    width: 147px;
+    height: 40px;
+
+    &:hover {
+      fill: @btn-red;
+    }
+
+    &:active {
+      fill: @white;
+      opacity: 0.3;
+    }
   }
 }
 
 .header__nav {
-  z-index: 5;
+  z-index: 520;
 
   @media (min-width: @desktop-width) {
     display: flex;
     width: 940px;
+    margin: 0 auto;
+
+    //background-color: @black-transparent;
   }
 }
 
 .header__item--border-top {
   @media (min-width: @desktop-width) {
     padding-left: 7px;
-
   }
 }
 
 .header__item--border-bottom {
+  background-color: @background-header-blue;
+  position: relative;
+  z-index: 2;
+
   @media (min-width: @desktop-width) {
     padding-left: 0;
     margin-left: -30px;
-
+    background-color: transparent;
   }
 }
 
@@ -250,5 +297,14 @@
   @media (min-width: @desktop-width) {
     text-transform: uppercase;
     margin-right: 6px;
+  }
+}
+
+.header__active {
+  @media (min-width: @desktop-width) {
+    width: auto;
+    height: 70%;
+    border-bottom: 2px solid currentColor;
+    position: relative;
   }
 }
