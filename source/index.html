@@ -202,12 +202,10 @@
 
   <header class="header">
     <nav class="header__nav">
-      <div class="header__back-color header__back-color--absent">
+      <div class="header__back-color ">
+        <!--header__back-colorabsent-->
         <div class="header__logo header__logo--close-list">
           <a class="header__logo-link " href="https://htmlacademy.ru/intensive/adaptive">
-            <!-- <svg class="header__logo-sunglasses" width="70" height="40">
-              <use xlink:href="#sunglasses-header"></use>
-            </svg> -->
             <svg class="header__logo-sunglasses" width="145" height="40">
               <use xlink:href="#sunglasses-header-pink"></use>
             </svg>
@@ -218,7 +216,8 @@
               <use xlink:href="#pink-star"></use>
             </svg>
           </a>
-          <button class="header__logo-button">
+          <button class="header__logo-button header__hidden-no-js">
+            <!-- -->
             <svg class="header__btn-close header__hidden header__hidden-button" width="23" height="23">
               <use xlink:href="#btn-close-header"></use>
             </svg>
@@ -228,7 +227,8 @@
           </button>
         </div>
       </div>
-      <ul class="header__website-pages  header__hidden">
+      <ul class="header__website-pages  ">
+        <!--  header__hidden -->
         <li class="header__item"><a class="header__link header__active" href="#!">главная</a></li>
         <li class="header__item header__item-foto"><a class="header__link" href="catalog.html">фотографии</a></li>
         <li class="header__item header__item--border-top"><a class="header__link" href="form.html">конкурс</a></li>
@@ -253,7 +253,7 @@
               height="286"></picture>
         </div>
       </div>
-      <button class="promo__button-download">Скачать приложение </button>
+      <button class="promo__button-download"> Скачать приложение</button>
       <ul class="promo__apps-list">
         <li class="promo__item"> <svg class="promo__logo-pink" width="47" height="56">
             <use xlink:href="#apple"></use>
@@ -300,9 +300,8 @@
               <p class="advantages__gradient"></p>
               <h3 class="advantages__header advantages__header-midle"><span>Меняет мир вокруг</span></h3>
               <p class="advantages__text advantages__text-midle">Сделайте снимок и украсьте его смайликом или текстовой
-                подписью, чтобы <br class="advantages__text-br">
-                усилить
-                эффект</p>
+                подписью, <span>чтобы</span><br class="advantages__text-br"> <span
+                  class="advantages__text-midle-span">усилить эффект</span></p>
             </li>
             <li class="advantages__item advantages__item-bottom">
               <p class="advantages__img"><img src="img/iphone.png" width="188" height="382" alt="корпус телефона">
@@ -310,8 +309,9 @@
                   srcset="img/iphone-screen-smile.png 1x, img/iphone-screen-smile@2x.png 2x" width="169" height="297"
                   alt="экран телефона"></p>
               <p class="advantages__gradient"></p>
-              <h3 class="advantages__header advantages__header-bottom"><span class="advantages__header-span">Заводит <br
-                    class="advantages__header-br">новых друзей</span></h3>
+              <h3 class="advantages__header advantages__header-bottom"><span
+                  class="advantages__header-span-first">Заводит</span> <br class="advantages__header-br"><span
+                  class="advantages__header-span">новых друзей</span></h3>
               <p class="advantages__text advantages__text--img">Ставьте лайки, комментируйте, делитесь фотографиями с
                 друзьями и заводите новых
               </p>
@@ -330,10 +330,10 @@
           <img class="slider-comment__advertisement-img-gray" src="img/timer-gray.svg" alt="изображение таймера">
           <div class="slider-comment__advertisement-text">
             <p class="slider-comment__advertisement-head">Эффект<br>
-              на 24 часа!</p>
+              <span>на 24 часа!</span></p>
             <p class="slider-comment__advertisement-content">Британские ученые провели исследования
-              и доказали,<br class="slider-comment__advertisement-content-desktop"> что положительный эффект <br
-                class="slider-comment__advertisement-content-tablet">
+              и доказали,<br class="slider-comment__advertisement-content-desktop"> <span>что положительный эффект
+              </span><br class="slider-comment__advertisement-content-tablet">
               от использования приложения длится целые сутки!</p>
             <a class="slider-comment__advertisement-link" href="#!">Узнать больше об исследовании</a>
           </div>
@@ -434,7 +434,7 @@
             <p class="price-app-slider__text">База</p>
             <p class="price-app-slider__price price-app-slider__price-baza"><span>1,99 USD</span></p>
           </div>
-          <div  class="price-app-slider__item">
+          <div class="price-app-slider__item">
             <p class="price-app-slider__item-border price-app-slider__item-border-left"><svg
                 class="price-app-slider__yes" width="31" height="21">
                 <use xlink:href="#yes-filter"></use>
@@ -536,10 +536,10 @@
             Конюшенная, 19/8</p>
         </li>
       </ul>
-      <!-- <img class="contacts__map-element" src="img/triangle.svg"> -->
       <div class="contacts__map"><iframe class="contacts__map-google"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603824136705!2d30.32332844738809!3d59.93871586989493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1608879638917!5m2!1sru!2sru"
-          style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2304.439804308112!2d20.4977455!3d54.7194784!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1622021337853!5m2!1sru!2sru"
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer">

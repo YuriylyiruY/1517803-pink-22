@@ -53,13 +53,14 @@
   justify-content: space-between;
   padding: 16px 20px 14px 20px;
   width: 280px;
-  margin: 0 auto;
+  margin: 5px auto 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 95%;
     height: 83px;
     //margin: 0 auto;
     padding: 25px 0 0 0;
+    margin: 6px auto 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -317,4 +318,8 @@
     position: relative;
     z-index: 5;
   }
+}
+
+.header__hidden-no-js {
+  display: none;
 }
